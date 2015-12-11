@@ -1,0 +1,24 @@
+{
+  "olpVersion" : "0.1",
+
+  "paths" : [
+    {
+      "name" : "building-modules-drupal8",
+      "title" : "Building modules with Drupal 8",
+      "description" : "To be written",
+      "privacy" : "public",
+      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverColor" : "#5ea52f",
+      "pages" : [
+        {"module" : "intro"}
+      ]
+    }
+  ],
+
+  "modules" : [
+    {"olm" : "./modules/intro.md"}
+  ],
+
+  "assets" : [
+  ]
+}
