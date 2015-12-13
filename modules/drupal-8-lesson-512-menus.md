@@ -1,8 +1,8 @@
 <!--
 {
-"name" : "examples-module-symfony-controllers-and-menu",
+"name" : "drupal-8-lesson-512-menus",
 "version" : "0.0.1",
-"title" : "Lesson 1.1 - Examples module, Symfony, and Controllers",
+"title" : "Lesson 1.2 - Menus",
 "description" : "TBD",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-lesson-512-menus",
