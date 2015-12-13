@@ -202,16 +202,37 @@ In the code example above everything should resemble building a form in Drupal 7
     *   The `validateForm()` method is optional and and validates similar to Drupal 7 `hook_form_validate` which api.drupal.org doesn't document.
     *   The `submitForm()` method performs the submission handling which is also not documented in Drupal 7 for `hook_form_submit`.
 
-Ensure the routeTo use this form, a route must be defined and added to the already existing `page_example.routing.yml` file: `page_example_form:
-path: '/examples/page_example/form'
-defaults:
-_form: '\Drupal\page_example\Form\PageExampleForm'
-_title: 'Demo Form'
-requirements:
-_permission: 'access simple page'` Instead of `_controller` under defaults, we use `_form` to specify that the target is a form class. The value is therefore the class name we just created.Rebuild the cache and navigate to `http://mysite.com/examples/page_example/form` to see and use the form.It should look like this:![demo-form.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/demo-form.png)If you are familiar with `drupal_get_form()` and are wondering how to load a form like Drupal 7, the answer is in the global Drupal class. To retrieve a form, you can use its `formBuilder()` method and do something like this: `$form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');`
+    ### Ensure the route
 
-Important
+    To use this form, a route must be defined and added to the already existing `page_example.routing.yml` file:
 
-Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_ be dependent on or change Block Entities.
+    ```
+    page_example_form:  
+    path: '/examples/page_example/form'  
+    defaults:  
+    _form: '\Drupal\page_example\Form\PageExampleForm'  
+    _title: 'Demo Form'  
+    requirements:  
+    _permission: 'access simple page'
+    ```
 
-You can then `$form`, which will be the renderable array of the form.
+    Instead of `_controller` under defaults, we use `_form` to specify that the target is a form class. The value is therefore the class name we just created.
+
+    Rebuild the cache and navigate to `http://mysite.com/examples/page_example/form` to see and use the form.
+
+    It should look like this:
+
+    ![demo-form.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/demo-form.png)
+
+    If you are familiar with `drupal_get_form()` and are wondering how to load a form like Drupal 7, the answer is in the global Drupal class. To retrieve a form, you can use its `formBuilder()` method and do something like this:
+
+    ```
+    $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
+    ```
+
+    IMPORTANT
+
+    Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
+
+
+    You can then `$form`, which will be the renderable array of the form.
