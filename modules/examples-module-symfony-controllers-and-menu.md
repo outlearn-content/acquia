@@ -12,7 +12,7 @@
 
 <!-- @section -->
 
-# Lesson 1.1 - Examples module, Symfony, and Controllers
+# Overview
 
 _Why is Drupal 8 module development so different?_
 

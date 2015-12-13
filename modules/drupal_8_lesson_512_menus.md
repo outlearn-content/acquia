@@ -12,7 +12,7 @@
 
 <!-- @section -->
 
-# Lesson 1.2 - Menus
+# Overview
 
 <!-- @section -->
 

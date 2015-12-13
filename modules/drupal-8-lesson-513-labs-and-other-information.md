@@ -12,7 +12,7 @@
 
 <!-- @section -->
 
-# Lesson 1.3 - Labs and other information
+# Overview
 
 <!-- @section -->
 
