@@ -20,7 +20,7 @@
 
   "modules" : [
     {"olm" : "./modules/intro.md"},
-    {"olm" : "./modules/examples-module-symfony-controllers-and-menu.md"}
+    {"olm" : "./modules/examples-module-symfony-controllers-and-menu.md"},
     {"olm" : "./modules/drupal-8-lesson-512-menus.md"},
     {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"}
   ],
