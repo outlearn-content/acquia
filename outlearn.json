@@ -13,7 +13,10 @@
         {"module" : "intro"},
         {"module" : "examples-module-symfony-controllers-and-menu"},
         {"module" : "drupal-8-lesson-512-menus"},
-        {"module" : "drupal-8-lesson-513-labs-and-other-information"}
+        {"module" : "drupal-8-lesson-513-labs-and-other-information"},
+        {"module" : "drupal-8-blocks-configuration-and-forms"},
+        {"module" : "creating-forms-drupal-8"},
+        {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"}
       ]
     }
   ],
@@ -22,7 +25,10 @@
     {"olm" : "./modules/intro.md"},
     {"olm" : "./modules/examples-module-symfony-controllers-and-menu.md"},
     {"olm" : "./modules/drupal-8-lesson-512-menus.md"},
-    {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"}
+    {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"},
+    {"olm" : "./modules/drupal-8-blocks-configuration-and-forms"},
+    {"olm" : "./modules/creating-forms-drupal-8.md"},
+    {"olm" : "./modules/drupal-8-blocks-configuration-and-forms-lab-and-other-information.md"}
   ],
 
   "assets" : [
