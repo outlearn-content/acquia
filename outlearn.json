@@ -12,7 +12,7 @@
       "pages" : [
         {"module" : "intro"},
         {"module" : "examples-module-symfony-controllers-and-menu"},
-        {"module" : "drupal-8-lesson-512-menus"},
+        {"module" : "drupal_8_lesson_512_menus"},
         {"module" : "drupal-8-lesson-513-labs-and-other-information"}
 
       ]
@@ -22,7 +22,7 @@
   "modules" : [
     {"olm" : "./modules/intro.md"},
     {"olm" : "./modules/examples-module-symfony-controllers-and-menu.md"},
-    {"olm" : "./modules/drupal-8-lesson-512-menus.md"},
+    {"olm" : "./modules/drupal_8_lesson_512_menus.md"},
     {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"}
   ],
 
