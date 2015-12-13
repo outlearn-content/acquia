@@ -1,6 +1,6 @@
 <!--
 {
-"name" : "drupal_8_lesson_512_menus",
+"name" : "drupal-8-lesson-512-menus",
 "version" : "0.0.1",
 "title" : "Lesson 1.2 - Menus",
 "description" : "TBD",

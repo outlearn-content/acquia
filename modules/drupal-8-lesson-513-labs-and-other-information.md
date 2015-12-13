@@ -9,6 +9,7 @@
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-lesson-513-labs-and-other-information",
 "license" : "CC BY-SA"
 }
+-->
 
 <!-- @section -->
 

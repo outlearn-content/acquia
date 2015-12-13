@@ -9,6 +9,7 @@
 "canonicalSource" : "https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu",
 "license" : "CC BY-SA"
 }
+-->
 
 <!-- @section -->
 
