@@ -10,14 +10,20 @@
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
       "coverColor" : "#5ea52f",
       "pages" : [
-        {"module" : "intro"}
+        {"module" : "intro"},
+        {"module" : "examples-module-symfony-controllers-and-menu"},
+        {"module" : "drupal-8-lesson-512-menus"},
+        {"module" : "drupal-8-lesson-513-labs-and-other-information"}
 
       ]
     }
   ],
 
   "modules" : [
-    {"olm" : "./modules/intro.md"}
+    {"olm" : "./modules/intro.md"},
+    {"olm" : "./modules/examples-module-symfony-controllers-and-menu.md"},
+    {"olm" : "./modules/drupal-8-lesson-512-menus.md"},
+    {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"}
   ],
 
   "assets" : [
