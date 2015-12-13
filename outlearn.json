@@ -16,7 +16,9 @@
         {"module" : "drupal-8-lesson-513-labs-and-other-information"},
         {"module" : "drupal-8-blocks-configuration-and-forms"},
         {"module" : "creating-forms-drupal-8"},
-        {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"}
+        {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"},
+        {"module" : "drupal-8-entities-content-entities-and-configuration-entities"},
+        {"module" : "drupal-8-entities-lab"}
       ]
     }
   ],
@@ -28,7 +30,9 @@
     {"olm" : "./modules/drupal-8-lesson-513-labs-and-other-information.md"},
     {"olm" : "./modules/drupal-8-blocks-configuration-and-forms.md"},
     {"olm" : "./modules/creating-forms-drupal-8.md"},
-    {"olm" : "./modules/drupal-8-blocks-configuration-and-forms-lab-and-other-information.md"}
+    {"olm" : "./modules/drupal-8-blocks-configuration-and-forms-lab-and-other-information.md"},
+    {"olm" : "./modules/drupal-8-entities-content-entities-and-configuration-entities.md"},
+    {"olm" : "./modules/drupal-8-entities-lab.md"}
   ],
 
   "assets" : [
