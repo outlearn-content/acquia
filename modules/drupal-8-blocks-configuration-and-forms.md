@@ -2,7 +2,7 @@
 {
 "name" : "drupal-8-blocks-configuration-and-forms",
 "version" : "0.0.1",
-"title" : "Lesson 2.1 - Blocks and Configuration ",
+"title" : "Lesson 2.1 - Blocks and Configuration",
 "description" : "TBD",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-blocks-configuration-and-forms",
