@@ -33,7 +33,8 @@ In Drupal 8, we use the [Symfony2 components](https://drupal.org/node/1635626) t
 1.  In the same directory (`page_example`), create the file `page_example.routing.yml`.
 2.  Add the following code to the file:
 
-    `page_example_description:
+    ```
+    page_example_description:
     path: '/examples/page_example'
     defaults:
     _controller: '\Drupal\page_example\Controller\PageExampleController::description'
@@ -45,7 +46,8 @@ In Drupal 8, we use the [Symfony2 components](https://drupal.org/node/1635626) t
     defaults:
     _controller: '\Drupal\page_example\Controller\PageExampleController::simple'
     requirements:
-    _permission: 'access simple page'`
+    _permission: 'access simple page'
+    ```
 
 Anatomy of the `page_example.routing.yml` file definitions of the route named `page_example_description` :
 
