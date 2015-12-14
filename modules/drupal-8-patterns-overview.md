@@ -48,9 +48,9 @@
     {{ field_two }}
 ```
 
-    While in theory, this makes sense, you might have a render array that starts as a group of other elements or one that starts as a group of variables. In reality, most elements are a mix and the way people have worked around these differences is very inconsistent.
+While in theory, this makes sense, you might have a render array that starts as a group of other elements or one that starts as a group of variables. In reality, most elements are a mix and the way people have worked around these differences is very inconsistent.
 
-    In the pattern we have used in this lesson, you end up with:
+In the pattern we have used in this lesson, you end up with:
 
 ```
     {# Render Element #}
@@ -60,7 +60,7 @@
     {{ element['#variable'] }}
 ```
 
-    It's not ideal, but it seems simple enough. You can print the entire element, a field, or a variable. This also keeps the pattern of variables all starting with `#`.
+It's not ideal, but it seems simple enough. You can print the entire element, a field, or a variable. This also keeps the pattern of variables all starting with `#`.
 
 *   **Process functions**
 
