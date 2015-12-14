@@ -36,7 +36,10 @@
         {"module" : "drupal-8-dependency-injection-summary"},
         {"module" : "drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries"},
         {"module" : "drupal-8-twig"},
-        {"module" : "drupal-8-adding-javascript-css-libraries-components"}
+        {"module" : "drupal-8-adding-javascript-css-libraries-components"},
+        {"module" : "drupal-8-advanced-render-array-patterns"},
+        {"module" : "drupal-8-patterns-overview"},
+        {"module" : "drupal-8-theme-lab"}
       ]
     }
   ],
@@ -68,7 +71,10 @@
     {"olm" : "./modules/drupal-8-dependency-injection-summary.md"},
     {"olm" : "./modules/drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries.md"},
     {"olm" : "./modules/drupal-8-twig.md"},
-    {"olm" : "./modules/drupal-8-adding-javascript-css-libraries-components.md"}
+    {"olm" : "./modules/drupal-8-adding-javascript-css-libraries-components.md"},
+    {"olm" : "./modules/drupal-8-advanced-render-array-patterns.md"},
+    {"olm" : "./modules/drupal-8-patterns-overview.md"},
+    {"olm" : "./modules/drupal-8-theme-lab.md"}
   ],
 
   "assets" : [
