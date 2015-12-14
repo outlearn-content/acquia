@@ -33,7 +33,10 @@
         {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
         {"module" : "drupal-8-services-and-controllers"},
         {"module" : "drupal-8-dependency-injection"},
-        {"module" : "drupal-8-dependency-injection-summary"}
+        {"module" : "drupal-8-dependency-injection-summary"},
+        {"module" : "drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries"},
+        {"module" : "drupal-8-twig"},
+        {"module" : "drupal-8-adding-javascript-css-libraries-components"}
       ]
     }
   ],
@@ -62,7 +65,10 @@
     {"olm" : "./modules/drupal-8-services-dependency-injection-and-service-containers.md"},
     {"olm" : "./modules/drupal-8-services-and-controllers.md"},
     {"olm" : "./modules/drupal-8-dependency-injection.md"},
-    {"olm" : "./modules/drupal-8-dependency-injection-summary.md"}
+    {"olm" : "./modules/drupal-8-dependency-injection-summary.md"},
+    {"olm" : "./modules/drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries.md"},
+    {"olm" : "./modules/drupal-8-twig.md"},
+    {"olm" : "./modules/drupal-8-adding-javascript-css-libraries-components.md"}
   ],
 
   "assets" : [
