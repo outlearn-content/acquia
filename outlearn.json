@@ -29,7 +29,11 @@
         {"module" : "drupal-8-loading-entities"},
         {"module" : "drupal-8-load-and-query-entities-lab"},
         {"module" : "drupal-8-loading-and-editing-fields"},
-        {"module" : "drupal-8-loading-fields-examples"}
+        {"module" : "drupal-8-loading-fields-examples"},
+        {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
+        {"module" : "drupal-8-services-and-controllers"},
+        {"module" : "drupal-8-dependency-injection"},
+        {"module" : "drupal-8-dependency-injection-summary"}
       ]
     }
   ],
@@ -54,7 +58,11 @@
     {"olm" : "./modules/drupal-8-loading-entities.md"},
     {"olm" : "./modules/drupal-8-load-and-query-entities-lab.md"},
     {"olm" : "./modules/drupal-8-loading-and-editing-fields.md"},
-    {"olm" : "./modules/drupal-8-loading-fields-examples.md"}
+    {"olm" : "./modules/drupal-8-loading-fields-examples.md"},
+    {"olm" : "./modules/drupal-8-services-dependency-injection-and-service-containers.md"},
+    {"olm" : "./modules/drupal-8-services-and-controllers.md"},
+    {"olm" : "./modules/drupal-8-dependency-injection.md"},
+    {"olm" : "./modules/drupal-8-dependency-injection-summary.md"}
   ],
 
   "assets" : [
