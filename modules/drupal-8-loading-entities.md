@@ -79,27 +79,28 @@ protected function example() {
 
     You can also use the static method when the container is not available.
 
-  ```
-  // Get a node storage object.
-    $node_storage = \Drupal::entityManager()->getStorage('node');
+```
+// Get a node storage object.
+$node_storage = \Drupal::entityManager()->getStorage('node');
 
-    // Load a single node.
-    $node_storage->load($nid);
-    // Load multiple nodes.
-    $node_storage->loadMultiple($nids);
-    ```
+// Load a single node.
+$node_storage->load($nid);
+// Load multiple nodes.
+$node_storage->loadMultiple($nids);
+```
 
 *   **Global method (not recommended)**
 
     The global method is most similar to Drupal 7\. In this example, we call global functions that load the nodes.
 
-    ```
-    // Load a single entity.
-    $node = entity_load('node', $nid);
+```
+// Load a single entity.
+$node = entity_load('node', $nid);
 
-    // Load multiple entities.
-    $nodes = entity_load_multiple('node', $nids);
-    ```
+// Load multiple entities.
+$nodes = entity_load_multiple('node', $nids);
+```
+
 <!-- @section -->
 
 ## Creating the Controller
@@ -202,9 +203,9 @@ class QueryExampleController extends ControllerBase {
 
 
 
-The next step is to edit the existing routing file to call the public functions:[Download this file](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/archive/79b8953fd5cdad77cfb675ff2d5d8c68416e0590.zip).
-```
+The next step is to edit the existing routing file to call the public functions:[Download this file](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/archive/79b8953fd5cdad77cfb675ff2d5d8c68416e0590.zip
 
+```
 query_example.simple:  
   path: 'examples/query_example/simple'
   defaults:
@@ -223,7 +224,6 @@ query_example.advanced:
     _controller: '\Drupal\query_example\Controller\QueryExampleController::conditionalGroupQuery'
   requirements:
     _access: 'TRUE'
-
 ```
 
 [view raw](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/raw/79b8953fd5cdad77cfb675ff2d5d8c68416e0590/query_example.routing.yml) [query_example.routing.yml](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40#file-query_example-routing-yml) hosted with ❤ by [GitHub](https://github.com)
