@@ -164,14 +164,17 @@ _access: 'TRUE'
 ## Creating the render arrays
 
 In the controller (`ThemeExampleController.php`), we created three elements/render arrays. The first is a container that contains **example one** and **example two** which are both elements/render arrays. **example one** is the most basic type of render array. This simplest form of a render array contains one key `#markup` and an associated value which is the markup to print.
+
 ```
 $output = [
 '#markup' => '<div>Markup Example</div>',
 ];
 ```
+
  More complex render arrays like example two contain a set of variables that are prefixed with # and children elements.
 
  Our second element is the basic render array that will eventually become our element markup. It is defined by `#type my_element` and contains the **label** and **description** variables. It contains no child elements at this point. At this point, the render array does not contain the link or random number. Those will be added later.
+
  ```
  $output = [
 '#type' => 'my_element',
@@ -179,6 +182,7 @@ $output = [
 '#description' => $this->t('This is the description text.'),
 ];
 ```
+
 <!-- @section -->
 
 ## Defining an element with a render element plugin
