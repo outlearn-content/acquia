@@ -60,9 +60,7 @@ The twenty-plus available [components](http://symfony.com/doc/current/components
 
 You can read some helpful information about [PSR-4 autoloading in Drupal 8](https://www.drupal.org/node/2156625), which helps to further explain the concept. For more about the basics of Symfony, see the [Symfony documentation](http://symfony.com/doc/current/index.html).
 
-Note
-
-Drupal 8 does not use the Model-View-Controller software architectural pattern. Drupal 8 only implements Controllers from that programming model.
+> **Note**: Drupal 8 does not use the Model-View-Controller software architectural pattern. Drupal 8 only implements Controllers from that programming model.
 
 ### Why use Symfony?
 
@@ -137,11 +135,13 @@ Now that you're in the correct directory, it's time to create the module's `.inf
 1.  Create a new file named `page_example.info.yml`.
 2.  Add the following code to the file:
 
-    `name: 'Page example'
+    ```
+    name: 'Page example'
     type: module
     description: 'An example module showing how to define a page to be displayed at a given URL.'
     package: 'Example modules'
-    core: 8.x`
+    core: 8.x
+    ```
 
 The `type` is a new attribute required in the file, and can be set to `module` or `theme` as theme projects also contain `*.info.yml` files. If you have experience with Drupal 7 development you will recognize several things such as: `name`, `description`, `core` and `dependencies` in the `*.info.yml` file.
 
