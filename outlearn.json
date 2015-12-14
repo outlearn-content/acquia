@@ -27,7 +27,9 @@
         {"module" : "drupal-8-fields-lab-and-other-information"},
         {"module" : "drupal-8-entity-queries-and-loading-entities"},
         {"module" : "drupal-8-loading-entities"},
-        {"module" : "drupal-8-load-and-query-entities-lab"}
+        {"module" : "drupal-8-load-and-query-entities-lab"},
+        {"module" : "drupal-8-loading-and-editing-fields"},
+        {"module" : "drupal-8-loading-fields-examples"}
       ]
     }
   ],
@@ -50,7 +52,9 @@
     {"olm" : "./modules/drupal-8-fields-lab-and-other-information.md"},
     {"olm" : "./modules/drupal-8-entity-queries-and-loading-entities.md"},
     {"olm" : "./modules/drupal-8-loading-entities.md"},
-    {"olm" : "./modules/drupal-8-load-and-query-entities-lab.md"}
+    {"olm" : "./modules/drupal-8-load-and-query-entities-lab.md"},
+    {"olm" : "./modules/drupal-8-loading-and-editing-fields.md"},
+    {"olm" : "./modules/drupal-8-loading-fields-examples.md"}
   ],
 
   "assets" : [
