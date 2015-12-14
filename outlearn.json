@@ -43,7 +43,12 @@
         {"module" : "drupal-8-unit-and-functional-testing"},
         {"module" : "drupal-8-unit-testing"},
         {"module" : "drupal-8-functional-tests"},
-        {"module" : "drupal-8-phpunit-doubles-mocks-stubs"}
+        {"module" : "drupal-8-phpunit-doubles-mocks-stubs"},
+        {"module" : "drupal-8-review-dependency-injection"},
+        {"module" : "drupal-8-dependency-injection-and-services"},
+        {"module" : "drupal-8-dependency-injection-and-controllers"},
+        {"module" : "drupal-8-dependency-injection-and-plugins"},
+        {"module" : "drupal-8-phpstorm-strategies"}
       ]
     }
   ],
@@ -82,7 +87,12 @@
     {"olm" : "./modules/drupal-8-unit-and-functional-testing.md"},
     {"olm" : "./modules/drupal-8-unit-testing.md"},
     {"olm" : "./modules/drupal-8-functional-tests.md"},
-    {"olm" : "./modules/drupal-8-phpunit-doubles-mocks-stubs.md"}
+    {"olm" : "./modules/drupal-8-phpunit-doubles-mocks-stubs.md"},
+    {"olm" : "./modules/drupal-8-review-dependency-injection.md"},
+    {"olm" : "./modules/drupal-8-dependency-injection-and-services.md"},
+    {"olm" : "./modules/drupal-8-dependency-injection-and-controllers.md"},
+    {"olm" : "./modules/drupal-8-dependency-injection-and-plugins.md"},
+    {"olm" : "./modules/drupal-8-phpstorm-strategies.md"}
   ],
 
   "assets" : [
