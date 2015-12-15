@@ -105,8 +105,7 @@ zip: 55555
 
 Note the associative array like nested structure which is similar for all YAML files. For example the `configform_example.info.yml` file. Under the key `address`, we have a `key|value` pair `line_1|123 fake st`. In most use cases, access to the nested values is achieved by use a of a dot(.) - and in this example a developer would use: `address.line_1`.
 
-Note
-
+> **Note**:
 This YAML file gets imported only when the module is installed. This means that if a module is already installed you must reinstall it by uninstalling and installing the module.
 
 ### Form methods

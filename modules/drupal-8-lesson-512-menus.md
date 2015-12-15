@@ -62,15 +62,14 @@ If you want to leverage additional routing options, see the [Structure of routes
 
 The Page example controller called `PageExampleController` will have a method named `description()` which is called when a user requests this page.
 
-Note
-
+> **Note**:
 The placement of the Controllers and other classes, into the `src/` directory is part of the adoption of the PSR-4 standard. This applies to modules. For other portions of Drupal we utilize a longer file path which leverages the PSR-0 standard. If you see code placed in a directory called `lib/`, that’s PSR-0 and is an artifact of the pre-beta evolution of Drupal 8 and should be moved to the `src/` path instead for contributed and custom modules.
 
 1.  Inside the module directory, create a path called `src/Controller`. This will house the controller classes.
 2.  Create the controller file `PageExampleController.php`.
 3.  We declare our class named `PageExampleController` inside the `PageExampleController.php` file similar to, though simpler than, the full `page_example module`:
 
-    ```php
+```php
     <?php
 
     /**
@@ -131,7 +130,7 @@ The placement of the Controllers and other classes, into the `src/` directory is
     }
 
     }
-    ```
+```
 
 Inside the `PageExampleController` class, we have two functions:
 

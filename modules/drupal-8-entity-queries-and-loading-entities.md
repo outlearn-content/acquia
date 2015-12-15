@@ -64,7 +64,7 @@ We will talk about services more in later chapters. In this example, we will use
 
  // Add a filter (published).
  $query->condition('status', 1);
- 
+
  // Run the query.
  $nids = $query->execute();
  }
@@ -78,7 +78,9 @@ Most code is no longer stored in a module's `*.module` file, so if the need aris
 
 To statically use the `entity.query`, add the following to your code:
 
-```$query = \Drupal::entityQuery('node');```
+```
+$query = \Drupal::entityQuery('node');
+```
 
 If you want to use a different type of entity, you can replace `node`. You can specify any other entity type's machine name to obtain the query object for the specified entity type inside of the `$query` variable. The `entityQuery()` static method on the `\Drupal` namespace is a shortcut, using the entity.query service.
 
@@ -100,14 +102,12 @@ $query = $this->entity_query->get('node')
 $nids = $query->execute();
 ```
 
-Note
-
+> **Note**:
 In an IDE like PHPStorm, providing comments allows the system to provide autocompletion. In our example, we are using an annotation above the variable declaration that says that the variable is the class `QueryInterface` and where that class is located.
 
-This is also helpful to add to function declarations. While not required, this is useful while learning and for others who have to edit the code, because they can easily explore the methods available to them.
+>This is also helpful to add to function declarations. While not required, this is useful while learning and for others who have to edit the code, because they can easily explore the methods available to them.
 
-Sometimes PHPStorm will know that a variable is of a certain type because you used a method that only returns that type. In other cases, like the one above, it could return various classes depending on the argument, so you must tell the IDE which class is correct. It's a good practice to add these annotations for all examples just to be clear and for people who aren't using an IDE.
-
+>Sometimes PHPStorm will know that a variable is of a certain type because you used a method that only returns that type. In other cases, like the one above, it could return various classes depending on the argument, so you must tell the IDE which class is correct. It's a good practice to add these annotations for all examples just to be clear and for people who aren't using an IDE.
 
 ### Query conditions
 
