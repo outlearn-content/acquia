@@ -2,8 +2,8 @@
 {
 "name" : "drupal-8-loading-entities",
 "version" : "0.0.1",
-"title" : "Lesson 6.2 - Loading entities ",
-"description" : "TBD",
+"title" : "Lesson 6.2 - Loading entities",
+"description" : "Loading entities",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-loading-entities",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-loading-entities",

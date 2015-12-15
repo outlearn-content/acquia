@@ -3,7 +3,7 @@
 "name" : "drupal-8-exporting-configurations",
 "version" : "0.0.1",
 "title" : "Lesson 5.2 - Exporting configurations",
-"description" : "TBD",
+"description" : "Exporting configurations",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-exporting-configurations",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-exporting-configurations",

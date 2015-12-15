@@ -3,7 +3,7 @@
 "name" : "drupal-8-dependency-injection-and-plugins",
 "version" : "0.0.1",
 "title" : "Lesson 11.4 - Dependency injection and plugins",
-"description" : "TBD",
+"description" : "Dependency injection and plugins",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-plugins",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-plugins",

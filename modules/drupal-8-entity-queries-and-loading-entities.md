@@ -3,7 +3,7 @@
 "name" : "drupal-8-entity-queries-and-loading-entities",
 "version" : "0.0.1",
 "title" : "Lesson 6.1 - Entity queries and loading entities",
-"description" : "TBD",
+"description" : "Entity queries and loading entities",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-entity-queries-and-loading-entities",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-entity-queries-and-loading-entities",

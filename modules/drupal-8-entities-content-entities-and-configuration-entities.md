@@ -3,7 +3,7 @@
 "name" : "drupal-8-entities-content-entities-and-configuration-entities",
 "version" : "0.0.1",
 "title" : "Lesson 4.1 - Entities, Content Entities, and Configuration Entities",
-"description" : "TBD",
+"description" : "Entities, Content Entities, and Configuration Entities",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-entities-content-entities-and-configuration-entities",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-entities-content-entities-and-configuration-entities",

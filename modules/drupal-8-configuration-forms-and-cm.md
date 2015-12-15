@@ -3,7 +3,7 @@
 "name" : "drupal-8-configuration-forms-and-cm",
 "version" : "0.0.1",
 "title" : "Lesson 3.1 - Configuration forms and management",
-"description" : "TBD",
+"description" : "Configuration forms and management",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-configuration-forms-and-cm",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-configuration-forms-and-cm",

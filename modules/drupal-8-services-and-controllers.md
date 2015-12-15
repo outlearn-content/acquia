@@ -3,7 +3,7 @@
 "name" : "drupal-8-services-and-controllers",
 "version" : "0.0.1",
 "title" : "Lesson 8.2 - Services and controllers",
-"description" : "TBD",
+"description" : "Services and controllers",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-services-and-controllers",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-services-and-controllers",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-dependency-injection",
 "version" : "0.0.1",
 "title" : "Lesson 8.3 - Dependency injection",
-"description" : "TBD",
+"description" : "Dependency injection",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-dependency-injection",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-dependency-injection",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-review-dependency-injection",
 "version" : "0.0.1",
 "title" : "Lesson 11.1 - Review of Dependency Injection",
-"description" : "TBD",
+"description" : "Review of Dependency Injection",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-review-dependency-injection",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-review-dependency-injection",

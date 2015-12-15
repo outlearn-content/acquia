@@ -3,7 +3,7 @@
 "name" : "drupal-8-load-and-query-entities-lab",
 "version" : "0.0.1",
 "title" : "Lesson 6.3 - Labs and other information ",
-"description" : "TBD",
+"description" : "Labs and other information",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-load-and-query-entities-lab",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-load-and-query-entities-lab",

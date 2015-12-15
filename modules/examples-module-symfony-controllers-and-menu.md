@@ -3,7 +3,7 @@
 "name" : "examples-module-symfony-controllers-and-menu",
 "version" : "0.0.1",
 "title" : "Lesson 1.1 - Examples module, Symfony, and Controllers",
-"description" : "TBD",
+"description" : "Examples module, Symfony, and Controllers",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu",
 "canonicalSource" : "https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu",

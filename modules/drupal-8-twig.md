@@ -3,7 +3,7 @@
 "name" : "drupal-8-twig",
 "version" : "0.0.1",
 "title" : "Lesson 9.2 - Twig",
-"description" : "TBD",
+"description" : "Twig",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-twig",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-twig",

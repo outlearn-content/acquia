@@ -3,7 +3,7 @@
 "name" : "creating-forms-drupal-8",
 "version" : "0.0.1",
 "title" : "Lesson 2.2 - Forms",
-"description" : "TBD",
+"description" : "Forms",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/creating-forms-drupal-8",
 "canonicalSource" : "https://docs.acquia.com/articles/creating-forms-drupal-8",

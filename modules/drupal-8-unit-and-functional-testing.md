@@ -3,7 +3,7 @@
 "name" : "drupal-8-unit-and-functional-testing",
 "version" : "0.0.1",
 "title" : "Lesson 10.1 - Unit and Functional Testing",
-"description" : "TBD",
+"description" : "Unit and Functional Testing",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-unit-and-functional-testing",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-unit-and-functional-testing",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-configuration-and-config-object",
 "version" : "0.0.1",
 "title" : "Lesson 3.2 - Configuration and the Config object",
-"description" : "TBD",
+"description" : "Configuration and the Config object",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-configuration-and-config-object",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-configuration-and-config-object",

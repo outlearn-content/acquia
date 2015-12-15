@@ -3,7 +3,7 @@
 "name" : "drupal-8-dependency-injection-and-services",
 "version" : "0.0.1",
 "title" : "Lesson 11.2 - Dependency injection and services",
-"description" : "TBD",
+"description" : "Dependency injection and services",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-services",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-services",

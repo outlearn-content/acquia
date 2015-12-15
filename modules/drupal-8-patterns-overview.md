@@ -3,7 +3,7 @@
 "name" : "drupal-8-patterns-overview",
 "version" : "0.0.1",
 "title" : "Lesson 9.5 - Patterns overview",
-"description" : "TBD",
+"description" : "Patterns overview",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-patterns-overview",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-patterns-overview",
