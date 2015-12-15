@@ -3,7 +3,7 @@
 "name" : "drupal-8-services-dependency-injection-and-service-containers",
 "version" : "0.0.1",
 "title" : "Lesson 8.1 - Services, dependency injection, and service containers",
-"description" : "TBD",
+"description" : "Services, dependency injection, and service containers",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-services-dependency-injection-and-service-containers",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-services-dependency-injection-and-service-containers",

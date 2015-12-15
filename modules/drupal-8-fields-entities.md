@@ -3,7 +3,7 @@
 "name" : "drupal-8-fields-entities",
 "version" : "0.0.1",
 "title" : "Lesson 5.1 - Fields for entities",
-"description" : "TBD",
+"description" : "Fields for entities",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-fields-entities",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-fields-entities",

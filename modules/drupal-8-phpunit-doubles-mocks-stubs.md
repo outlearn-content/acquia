@@ -3,7 +3,7 @@
 "name" : "drupal-8-phpunit-doubles-mocks-stubs",
 "version" : "0.0.1",
 "title" : "Lesson 10.4 - PHPUnit Doubles / Mocks / Stubs",
-"description" : "TBD",
+"description" : "PHPUnit Doubles / Mocks / Stubs",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-phpunit-doubles-mocks-stubs",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-phpunit-doubles-mocks-stubs",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries",
 "version" : "0.0.1",
 "title" : "Lesson 9.1 - Creating Elements, Theming Elements, and Managing Front-end Libraries",
-"description" : "TBD",
+"description" : "Creating Elements, Theming Elements, and Managing Front-end Libraries",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-lesson-513-labs-and-other-information",
 "version" : "0.0.1",
 "title" : "Lesson 1.3 - Labs and other information",
-"description" : "TBD",
+"description" : "Labs and other information",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-lesson-513-labs-and-other-information",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-lesson-513-labs-and-other-information",

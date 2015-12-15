@@ -3,7 +3,7 @@
 "name" : "drupal-8-phpstorm-strategies",
 "version" : "0.0.1",
 "title" : "Lesson 11.5 - PhpStorm strategies",
-"description" : "TBD",
+"description" : "PhpStorm strategies",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-phpstorm-strategies",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-phpstorm-strategies",

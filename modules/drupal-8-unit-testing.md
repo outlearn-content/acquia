@@ -3,7 +3,7 @@
 "name" : "drupal-8-unit-testing",
 "version" : "0.0.1",
 "title" : "Lesson 10.2 - Unit testing",
-"description" : "TBD",
+"description" : "Unit testing",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-unit-testing",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-unit-testing",

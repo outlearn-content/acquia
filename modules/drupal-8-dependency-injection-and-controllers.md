@@ -3,7 +3,7 @@
 "name" : "drupal-8-dependency-injection-and-controllers",
 "version" : "0.0.1",
 "title" : "Lesson 11.3 - Dependency injection and controllers",
-"description" : "TBD",
+"description" : "Dependency injection and controllers",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-controllers",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-dependency-injection-and-controllers",

@@ -3,7 +3,7 @@
 "name" : "drupal-8-lesson-512-menus",
 "version" : "0.0.1",
 "title" : "Lesson 1.2 - Menus",
-"description" : "TBD",
+"description" : "Menus",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-lesson-512-menus",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-lesson-512-menus",

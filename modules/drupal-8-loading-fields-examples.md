@@ -3,7 +3,7 @@
 "name" : "drupal-8-loading-fields-examples",
 "version" : "0.0.1",
 "title" : "Lesson 7.2 - Loading fields examples",
-"description" : "TBD",
+"description" : "Loading fields examples",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-loading-fields-examples",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-loading-fields-examples",

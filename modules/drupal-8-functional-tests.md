@@ -3,7 +3,7 @@
 "name" : "drupal-8-functional-tests",
 "version" : "0.0.1",
 "title" : "Lesson 10.3 - Functional tests",
-"description" : "TBD",
+"description" : "Functional tests",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-functional-tests",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-functional-tests",

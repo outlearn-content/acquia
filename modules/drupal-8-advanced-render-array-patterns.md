@@ -3,7 +3,7 @@
 "name" : "drupal-8-advanced-render-array-patterns",
 "version" : "0.0.1",
 "title" : "Lesson 9.4 - Advanced render array patterns",
-"description" : "TBD",
+"description" : "Advanced render array patterns",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-advanced-render-array-patterns",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-advanced-render-array-patterns",

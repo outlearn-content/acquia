@@ -3,7 +3,7 @@
 "name" : "drupal-8-loading-and-editing-fields",
 "version" : "0.0.1",
 "title" : "Lesson 7.1 - Loading and editing fields",
-"description" : "TBD",
+"description" : "Loading and editing fields",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-loading-and-editing-fields",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-loading-and-editing-fields",

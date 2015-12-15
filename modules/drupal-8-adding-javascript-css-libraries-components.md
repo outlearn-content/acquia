@@ -3,7 +3,7 @@
 "name" : "drupal-8-adding-javascript-css-libraries-components",
 "version" : "0.0.1",
 "title" : "Lesson 9.3 - Adding JavaScript / CSS / Libraries to components",
-"description" : "TBD",
+"description" : "Adding JavaScript / CSS / Libraries to components",
 "freshnessDate" : 2015-12-11,
 "homepage" : "https://docs.acquia.com/articles/drupal-8-adding-javascript-css-libraries-components",
 "canonicalSource" : "https://docs.acquia.com/articles/drupal-8-adding-javascript-css-libraries-components",
