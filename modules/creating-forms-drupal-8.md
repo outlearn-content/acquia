@@ -230,9 +230,8 @@ In the code example above everything should resemble building a form in Drupal 7
     $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
     ```
 
-    IMPORTANT
+> **IMPORTANT**
+Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
 
-    Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
 
-
-    You can then `$form`, which will be the renderable array of the form.
+You can then `$form`, which will be the renderable array of the form.

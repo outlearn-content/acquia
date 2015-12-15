@@ -89,7 +89,9 @@ Using the configuration API in Drupal 8 allows you to store configurations such 
 
 When providing configuration for a module it is possible to define the default value in a special YAML file located in the `config/install` directory in the module's root directory. The proper naming convention for this file is to prefix it with the name of the module. In working with our example we use `configform_example.settings.yml` . You can use the following sample code so to set a default email address of `examples@examples.com`. Feel free to change it to a address of your choosing:
 
-`email_address: form@examples.com`
+```
+email_address: form@examples.com
+```
 
 ### Nesting fields
 

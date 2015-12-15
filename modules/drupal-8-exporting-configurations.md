@@ -66,6 +66,7 @@ fields_example/
 | |-- node.type.external.yml
 |-- external.info.yml
 ```
+
 It's time to review the progress.
 
 1.  Remove the existing External content type.

@@ -136,11 +136,13 @@ Now that you're in the correct directory, it's time to create the module's `.inf
 1.  Create a new file named `page_example.info.yml`.
 2.  Add the following code to the file:
 
-    `name: 'Page example'
-    type: module
-    description: 'An example module showing how to define a page to be displayed at a given URL.'
-    package: 'Example modules'
-    core: 8.x`
+```
+name: 'Page example'
+type: module
+description: 'An example module showing how to define a page to be displayed at a given URL.'
+package: 'Example modules'
+core: 8.x
+```
 
 The `type` is a new attribute required in the file, and can be set to `module` or `theme` as theme projects also contain `*.info.yml` files. If you have experience with Drupal 7 development you will recognize several things such as: `name`, `description`, `core` and `dependencies` in the `*.info.yml` file.
 

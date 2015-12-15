@@ -33,7 +33,7 @@ In Drupal 8, we use the [Symfony2 components](https://drupal.org/node/1635626) t
 1.  In the same directory (`page_example`), create the file `page_example.routing.yml`.
 2.  Add the following code to the file:
 
-    ```
+```
     page_example_description:
     path: '/examples/page_example'
     defaults:
@@ -47,7 +47,7 @@ In Drupal 8, we use the [Symfony2 components](https://drupal.org/node/1635626) t
     _controller: '\Drupal\page_example\Controller\PageExampleController::simple'
     requirements:
     _permission: 'access simple page'
-    ```
+```
 
 Anatomy of the `page_example.routing.yml` file definitions of the route named `page_example_description` :
 
@@ -140,14 +140,13 @@ Inside the `PageExampleController` class, we have two functions:
 For all practical purposes this is the least we need to write in the module in order to get text to display at the target URL. This equates to the age old "Hello world" scenario where the goal is to get the response to running the program of "Hello World!". In this code the first critical line we wrote (line 8) is used to define the class namespace which allows for the classes reuse elsewhere in code. After the namespace has been declared, it's then possible to declare the class on line 15.
 
 
-Namespaces in PHP
-
+> **Namespaces in PHP**
 "Although any valid PHP code can be contained in a namespace, only the following types of code are affected by namespaces: classes (including abstracts and traits), interfaces, functions and constants. Namespaces are declared using the namespace keyword. A file containing a namespace must declare the namespace at the top of the file before any other code - with one exception: the declare keyword." PHP Net, [Defining Namespaces](http://php.net/manual/en/language.namespaces.definition.php)
 
 
 Following the namespace declaration we then implement the use operator to allow us to reuse a method created as part of the URL class which is part of Drupal 8 core.
 
-Using the use operator
+> **Using the use operator**
 
 "The ability to refer to an external fully qualified name with an alias, or importing, is an important feature of namespaces. This is similar to the ability of unix-based filesystems to create symbolic links to a file or to a directory... In PHP, aliasing is accomplished with the use operator." PHP Net, [Using namespaces: Aliasing/Importing](http://php.net/manual/en/language.namespaces.importing.php)
 
@@ -178,16 +177,16 @@ Now we'll create a menu link that shows up under the **Reports** menu of the Dru
 1.  In the module directory, create the file `page_example.links.menu.yml`
 2.  Add the following code to the file:
 
-  ```
+```
   page_example.description:
     title: 'Page Example'
     route_name: page_example_description
     parent: system.admin_reports
-    page_example.simple:
+  page_example.simple:
     title: 'Simple - no arguments'
     route_name: page_example_simple
     parent: system.admin_reports
-  ```
+```
 
 Again we have a YAML structure based on indentation in which we first define the machine name of the menu link (demo) for the module demo (like we did with the routing). Next, we have the link title and description followed by the parent of this link (where it should be placed) and what route it should use.
 

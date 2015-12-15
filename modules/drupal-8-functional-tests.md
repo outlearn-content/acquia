@@ -262,9 +262,9 @@ An example SimpleTest, `src/Tests/TestExampleUserTest.php`:
 
     Functional tests can be run from the Drupal 8 website, or by using the command line. The command line usage looks something like this:
 
-    `
-    php core/scripts/run-tests.sh --verbose --url http://d8.dev/ --color test_example
-    `
+```
+php core/scripts/run-tests.sh --verbose --url http://d8.dev/ --color test_example
+```
 
     You will want to use a --url option that matches your local setup. The --color option will color code the results which make them easier to skim. At the end of the command, we add our module name so that the tests are run only on that module.
 

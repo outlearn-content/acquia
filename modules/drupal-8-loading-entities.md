@@ -225,5 +225,4 @@ query_example.advanced:
   requirements:
     _access: 'TRUE'
 ```
-
 [view raw](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/raw/79b8953fd5cdad77cfb675ff2d5d8c68416e0590/query_example.routing.yml) [query_example.routing.yml](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40#file-query_example-routing-yml) hosted with ❤ by [GitHub](https://github.com)
