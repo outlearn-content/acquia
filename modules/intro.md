@@ -1,6 +1,6 @@
 <!--
 {
-"name" : "intro",
+"name" : "acquia-building-modules-intro",
 "version" : "0.0.1",
 "title" : "Introduction",
 "description" : "What you need to get started with Drupal 8.",

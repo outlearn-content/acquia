@@ -33,6 +33,8 @@ Drupal 8 implements changes that are necessary to modernize itself so that it ma
 
 To explore Drupal 8, we use the [Examples](https://www.drupal.org/project/examples) project, both for sample code snippets in this class and to prepare you for future exploration of the various module development capabilities in Drupal. Be sure to follow the setup instructions for this lesson and clone the Git repo for the Drupal 8 version of the module to a location that isn't in the Drupal path — this avoids any chance of the code conflicting with the lab work that you'll be engaging in. Work and examples in this class primarily draw upon the Examples project's module `page_example`.
 
+<!-- @task, "text" : "Clone the Git repo for the Drupal 8 version of the module to a location that isn't in the Drupal path." -->
+
 <!-- @section -->
 
 ## Symfony

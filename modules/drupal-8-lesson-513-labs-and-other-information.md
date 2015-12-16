@@ -35,6 +35,8 @@ You should now understand:
 *   Menu links are also implemented using a YAML configuration file.
 *   Classes can be declared in the `Controller.php` file.
 
+<!-- @task, "text" : "Make sure you have understood everything listed above. Go back and find some more examples in case you missed something." -->
+
 <!-- @section -->
 
 ## Exploring further
@@ -45,12 +47,14 @@ If you want to continue exploring this lesson, try:
 2.  Figure out how to place your menu items under a new menu using the Providing module-defined menu links documentation.
 3.  Complete the Symfony walkthrough.
 
+<!-- @task, "text" : "Do at least one from the three tasks above." -->
+
 You should be able to answer these questions:
 
-*   What is different about Drupal 8 module development?
-*   Why is Symfony now a part of Drupal?
-*   What replaces a `page callback` function used in Drupal 7's `hook_menu()` function?
-*   What is autoloading?
+<!-- @task, "hasDeliverable" : true, "text" : "What is different about Drupal 8 module development?" -->
+<!-- @task, "hasDeliverable" : true, "text" : "Why is Symfony now a part of Drupal?" -->
+<!-- @task, "hasDeliverable" : true, "text" : "What replaces a `page callback` function used in Drupal 7's `hook_menu()` function?" -->
+<!-- @task, "hasDeliverable" : true, "text" : "What is autoloading?" -->
 
 <!-- @section -->
 
@@ -73,3 +77,5 @@ You should be able to answer these questions:
 15.  Enable the module.
 16.  Rebuild the caches (also known historically and in some places in core as clearing the caches) using `drush cr` if you have setup your alias for drush or `drush8 cr` if you haven't.
 17.  To test, navigate to `http://mysite.com/examples/page_example/simple`, and and you should then see a Drupal page with the expected text printed on it.
+
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->

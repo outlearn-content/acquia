@@ -10,7 +10,7 @@
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
       "coverColor" : "#5ea52f",
       "pages" : [
-        {"module" : "intro"},
+        {"module" : "acquia-building-modules-intro"},
         {"module" : "examples-module-symfony-controllers-and-menu"},
         {"module" : "drupal-8-lesson-512-menus"},
         {"module" : "drupal-8-lesson-513-labs-and-other-information"},

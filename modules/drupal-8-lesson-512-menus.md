@@ -149,6 +149,8 @@ Following the namespace declaration we then implement the use operator to allow 
 > **Using the use operator**
 > "The ability to refer to an external fully qualified name with an alias, or importing, is an important feature of namespaces. This is similar to the ability of unix-based filesystems to create symbolic links to a file or to a directory... In PHP, aliasing is accomplished with the use operator." PHP Net, [Using namespaces: Aliasing/Importing](http://php.net/manual/en/language.namespaces.importing.php)
 
+<!-- @task, "text" : "Create your .routing.yml file and your Controller as described above. Rebuild your caches and visit the path you have provided in your .routing.yml file." -->
+
 ### How do I know the path for the namespace and use operator?
 
 Essentially, the path to the location of your class file is used to define the namespace so that it can later be used an an alias using the use operator and then have any methods in your class file referenced similar to the following:
@@ -196,3 +198,5 @@ The `route_name` is the machine name of the route we want to use for this link. 
 ### Clear the caches
 
 To rebuild a Drupal 8 site and clear all its caches from the command line use the latest available version of Drush on the platform: `drush cr`
+
+<!-- @task, "text" : "Create your .links.menu.yml as described above. Rebuild your caches and reload the page to see the new menu item." -->

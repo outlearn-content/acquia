@@ -31,6 +31,8 @@ We've learned about module-level implementation of CM.
 *   Configuration forms are a specific use form helpful for storing configuration data to the database and file system.
 *   A config object is an instantiation of a configuration.
 
+<!-- @task, "text" : "Make sure you have understood everything listed above. Go back and find some more examples in case you missed something." -->
+
 <!-- @section -->
 
 ## Step by step instructions:
@@ -62,16 +64,18 @@ We've learned about module-level implementation of CM.
 
 You should see a Drupal page with the expected form on it that is configurable.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional questions
 
 To further your understanding, you can explore these additional questions:
 
-*   How did configuration work in Drupal 7?
-*   Give three reasons why aggregating configuration functionality into one system is helpful.
-*   Modify your sample code to save two values to the configuration system.
-*   Read more about multilingual support with the use of schemas.
+<!-- @task, "hasDeliverable" : true, "text" : "How did configuration work in Drupal 7?" -->
+<!-- @task, "hasDeliverable" : true, "text" : "Give three reasons why aggregating configuration functionality into one system is helpful." -->
+<!-- @task, "text" : "Modify your sample code to save two values to the configuration system." -->
+<!-- @task, "text" : "Read more about multilingual support with the use of schemas." -->
 
 <!-- @section -->
 

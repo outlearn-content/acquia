@@ -26,6 +26,8 @@ In this lesson we’ve continued to explore Drupal 8 module development with two
 *   The file then includes the other classes from either Core or other sources.
 *   The comments contain annotations which allow the auto-discovery of metadata about the class and this is not a normally expected behavior for a comment but is how the standard works.
 
+<!-- @task, "text" : "Make sure you have understood everything listed above. Go back and find some more examples in case you missed something." -->
+
 <!-- @section -->
 
 ## Complete lab instructions
@@ -60,6 +62,8 @@ In this lesson we’ve continued to explore Drupal 8 module development with two
 28.  Clear the caches using `drush cr`.
 29.  To test, navigate to `http://mysite.com/examples/page_example/form`.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional activities
@@ -92,6 +96,8 @@ We don't use the `ExampleUppercaseBlock.php` file but we do create both the `Exa
 *   Create a form block or page which can send an e-mail to an address provided in the form.
 *   Create your own Entity that utilizes Block Plugins.
 *   Research why some developers push back against the use of annotations.
+
+<!-- @task, "text" : "Do at least one from the five tasks above." -->
 
 <!-- @section -->
 

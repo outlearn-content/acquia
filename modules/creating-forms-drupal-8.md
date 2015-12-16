@@ -109,6 +109,8 @@ First, we'll create a single block to contain the form:
 
   `drush cr`
 
+<!-- @task, "text" : "Make your block configurable by creating a form for it as described above." -->
+
 Understanding the new features and functions
 
 *   **Avoiding global functions**
@@ -235,3 +237,5 @@ Block Plugins are what you will be using in custom and contributed modules. Bloc
 
 
 You can then `$form`, which will be the renderable array of the form.
+
+<!-- @task, "text" : "Implement your first non-config form in Drupal 8 as described above." -->

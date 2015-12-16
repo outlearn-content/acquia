@@ -92,3 +92,5 @@ Drupal will not discover the blocks unless they are properly annotated.
 This extends the `BlockBase` class into our `ExampleEmptyBlock`, inside which we implement one method: `build()`. This is one of the most common ad important methods, as it returns a renderable array which the block will print out.
 
 Clear the caches, navigate to the layout configuration page **`/admin/structure/block`**, and although in Drupal 7 you would be able to see your new block under the disabled section, in Drupal 8 you have to click **Place Block** to see your new block as a choice:
+
+<!-- @task, "text" : "Create and place your first block as described above." -->

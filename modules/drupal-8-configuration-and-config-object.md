@@ -19,6 +19,8 @@ Drupal 8 provides a [Config object](https://api.drupal.org/api/drupal/core%21lib
 
 > **Types of Injection: from the Symfony documentation** _"There are several ways that the dependencies can be injected. Each injection point has advantages and disadvantages to consider, as well as different ways of working with them when using the service container."_
 
+<!-- @task, "text" : "Look up what types of dependency injection Drupal 8 uses." -->
+
 `ConfigFormBase` is one such class that uses dependency injection to provide a config object.
 
 Looking at the the `configform_example` module code, you can see that it is using the `config()` method of the parent class to retrieve a Config object, populated with our `configform_example.settings` simple configuration. Then, for the `#default_value` of the email form element, we use the `get()` method of the Config object to retrieve the value of the email address.
@@ -103,6 +105,8 @@ Create the `ConfigFormExampleConfigForm.php` class file in the `src/Form` folder
 
 [view raw](https://gist.github.com/acquialibrary/c7e11dcaae9278ea9c0a/raw/14be57d56955556a0e38420a3dbacb377870deac/ConfigFormExampleConfigForm.php) [ConfigFormExampleConfigForm.php](https://gist.github.com/acquialibrary/c7e11dcaae9278ea9c0a#file-configformexampleconfigform-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Test your standalone configuration form manually." -->
+
 ## Using pre-written code
 
 As described earlier, one useful approach is to use previously written code as a starting point for new work. In this instance, some code written in a previous lesson should be modified to account for changes in names to avoid conflicts with other files and modules. It is possible to use the page_example module created in lesson 1 to create the page the form will live in for lesson 3.
@@ -159,3 +163,5 @@ label: 'This is the example email address.
 ```
 
 After reinstalling the configform_example module, you will have access to the additional functionality provided by the Configuration Inspector.
+
+<!-- @task, "text" : "Provide a .schema.yml file for your configuration to make it consumable by machines." -->
