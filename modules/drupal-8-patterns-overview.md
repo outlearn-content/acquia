@@ -13,7 +13,7 @@
 
 <!-- @section -->
 
-## Overview of the available patterns
+# Overview of the available patterns
 
 [![D8RenderArrayEntireMap.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/D8RenderArrayEntireMap.png)](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/D8RenderArrayEntireMap.png)
 
