@@ -101,6 +101,8 @@ $node = entity_load('node', $nid);
 $nodes = entity_load_multiple('node', $nids);
 ```
 
+<!-- @task, "text" : "Make sure you have understood the three ways of accessing the entity manager service to load entities." -->
+
 <!-- @section -->
 
 ## Creating the Controller
@@ -228,3 +230,5 @@ query_example.advanced:
     _access: 'TRUE'
 ```
 [view raw](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/raw/79b8953fd5cdad77cfb675ff2d5d8c68416e0590/query_example.routing.yml) [query_example.routing.yml](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40#file-query_example-routing-yml) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Extend your module as described above to have some lists of entity IDs, demonstrating the usage of the entity query service." -->

@@ -93,6 +93,8 @@ This example demonstrates that some fields have more than just a value — for e
 ```
 [view raw](https://gist.github.com/acquialibrary/6d7b7aff228ce341f55f/raw/2d6d408853c562849266b7856fd0fc424574b112/complex-field-get-set.php) [complex-field-get-set.php](https://gist.github.com/acquialibrary/6d7b7aff228ce341f55f#file-complex-field-get-set-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Make sure you know how to get and set simple and complex field values of an entity." -->
+
 <!-- @section -->
 
 ## Obtaining information about the field
@@ -107,3 +109,5 @@ $definition = $field->getFieldDefinition();
 
 $field_type = $definition->get('field_type');
 ```
+
+<!-- @task, "text" : "Make sure you know how to get the definition of a field." -->

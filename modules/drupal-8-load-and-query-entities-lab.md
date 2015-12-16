@@ -44,8 +44,10 @@ We’ve also seen how to load entities based on the IDs resulting from these que
 
     Alternatively, you can copy all the code from `QueryExampleController.php` to avoid manually creating each method and then modify the names.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional exercise
 
-*   Create a page which uses the `entity.manager` and `entity.query` services to display the node teasers for `simpleQuery()`.
+<!-- @task, "text" : "Create a page which uses the `entity.manager` and `entity.query` services to display the node teasers for `simpleQuery()`." -->

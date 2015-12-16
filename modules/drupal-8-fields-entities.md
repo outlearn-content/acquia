@@ -45,6 +45,10 @@ drush config-export
 
 For additional information about using Drush, see [Drush based workflow](https://www.drupal.org/node/2416591) on drupal.org.
 
+<!-- @task, "text" : "Make sure you have understood the Drush based configuration workflow." -->
+
+<!-- @task, "text" : "Export the configuration of your Drupal 8 site to the file system." -->
+
 <!-- @section -->
 
 ## Create a new content type
@@ -59,6 +63,8 @@ In the previous lesson, we discussed ways to create a new content type. You'll n
 When you navigate to `/node/add`, your website now displays the new External content type in action!
 
 ![external-node.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/external-node.png)
+
+<!-- @task, "text" : "Create the External content type with a Link field." -->
 
 <!-- @section -->
 
@@ -90,6 +96,8 @@ You may see additional files listed here, particularly if you are re-using an ex
 
 *   `core.extension`
 *   `user.role.administrator`
+
+<!-- @task, "text" : "See the changes you have made to the configuration of your site by adding a new content type." -->
 
 ### What are these configuration files?
 
@@ -144,3 +152,7 @@ First, let's look at what each file does by comparing the file to the correspond
 #### What is the difference between field.field and field.storage files?
 
 The Field API defines two primary data structures, FieldStorage and Field, and the concept of a Bundle. A FieldStorage defines a particular type of data that can be attached to entities. A Field is attached to a single Bundle. A Bundle is a set of fields that are treated as a group by the Field Attach API and is related to a single fieldable entity type. Want to know more about bundles, fields, and entity types? Read [An Introduction to Entities](https://www.drupal.org/node/1261744) on drupal.org.
+
+<!-- @task, "text" : "Have a sense of the meaning of those exported configuration files by running through at least the changed ones." -->
+
+<!-- @task, "text" : "Increase your knowledge about configuration files by changing some setting in the UI, reexporting the configuration and checking the change. Do it again some five to ten times." -->

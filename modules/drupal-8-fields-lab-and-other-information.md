@@ -29,6 +29,8 @@ Drupal 8 ships with several new modules to extend the default Fields API possibi
 
 HTML5 fields also support the [schema.org](http://schema.org/) markup. There is no user interface in core, but you can use the [RDF UI](https://www.drupal.org/project/rdfui) module to map your fields to schema.org.
 
+<!-- @task, "text" : "Make sure you have understood that the most common field types are now included in core." -->
+
 <!-- @section -->
 
 ## Step by step instructions
@@ -50,10 +52,12 @@ HTML5 fields also support the [schema.org](http://schema.org/) markup. There is 
 15.  Re-enable the module.
 16.  Test to confirm that both the new content type and fields have been correctly added.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional questions and exercises
 
-*   Export configurations for a new field using the [Configuration development](https://www.drupal.org/project/config_devel) module.
-*   Explain why the module requires a `field.storage.node.field_url.yml` file, when the body and image fields do not.
-*   Using the Examples modules as a reference, modify the module code to prevent deletion of the External content type while the module is installed.
+<!-- @task, "text" : "Export configurations for a new field using the [Configuration development](https://www.drupal.org/project/config_devel) module." -->
+<!-- @task, "hasDeliverable" : true, "text" : "Explain why the module requires a `field.storage.node.field_url.yml` file, when the body and image fields do not." -->
+<!-- @task, "text" : "Using the Examples modules as a reference, modify the module code to prevent deletion of the External content type while the module is installed." -->

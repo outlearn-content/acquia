@@ -84,6 +84,10 @@ $query = \Drupal::entityQuery('node');
 
 If you want to use a different type of entity, you can replace `node`. You can specify any other entity type's machine name to obtain the query object for the specified entity type inside of the `$query` variable. The `entityQuery()` static method on the `\Drupal` namespace is a shortcut, using the entity.query service.
 
+<!-- @task, "text" : "Make sure you have understood the two ways of accessing the entity query service: the class-based dependency injection one and the static one." -->
+
+<!-- @task, "text" : "Make sure you know when to use the static way of accessing any service." -->
+
 <!-- @section -->
 
 ## Querying entities
@@ -108,6 +112,8 @@ In an IDE like PHPStorm, providing comments allows the system to provide autocom
 >This is also helpful to add to function declarations. While not required, this is useful while learning and for others who have to edit the code, because they can easily explore the methods available to them.
 
 >Sometimes PHPStorm will know that a variable is of a certain type because you used a method that only returns that type. In other cases, like the one above, it could return various classes depending on the argument, so you must tell the IDE which class is correct. It's a good practice to add these annotations for all examples just to be clear and for people who aren't using an IDE.
+
+<!-- @task, "text" : "Learn how to use annotations describing the types of your variables to help your IDE (like PhpStorm) being assistive to you." -->
 
 ### Query conditions
 
@@ -155,3 +161,5 @@ By default, the entity query will only return the most recent revision for each 
 ```
 $query->allRevisions();
 ```
+
+<!-- @task, "text" : "Make sure you have understood all the described ways of working with the entity query." -->

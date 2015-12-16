@@ -76,3 +76,7 @@ An alternate approach to creating an entity file is using the [Console](https://
 *   Support adding services using Dependency Injection on class generation.
 
 If you use the Console project, the instructions involves installing a PHP Archive or `.phar` file. The `phar` extension provides a mechanism for putting entire PHP applications into a single file for improved distribution and installation. Using the instructions, you may encounter permissions issues. For instance, when running `drupal generate::module`, the process recently failed and resulted in a warning of `Notice: The "phar.readonly" setting needs to be off to create Phars`. If you encounter this or any other issue during the installation process, we recommend using the Console project issue queue.
+
+<!-- @task, "text" : "Make sure you have understood the different types of entity types: content and configuration." -->
+
+<!-- @task, "text" : "Install Console and make sure it is usable in your toolchain." -->

@@ -314,6 +314,8 @@ This is an example for the file `src/Controller/FieldExampleDefaultController.ph
 ```
 [view raw](https://gist.github.com/acquialibrary/d9686081ab44c87ee772/raw/7e5bf9a18ccdc6162ae2104c33a52ccb21e7139a/FieldExampleController.php) [FieldExampleController.php](https://gist.github.com/acquialibrary/d9686081ab44c87ee772#file-fieldexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Make sure you have a working knowledge about loading an entity, getting and setting its field values, and obtaining information about its fields." -->
+
 <!-- @section -->
 
 ## Review

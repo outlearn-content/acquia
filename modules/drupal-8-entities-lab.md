@@ -41,13 +41,15 @@ Regardless of which of the three approaches you choose (manual, the user interfa
 14.  Create the `src/Entity/Controller/ContactListBuilder.php` file which defines header and row content for the Contact listing.
 15.  Define the form for managing fields for the entity with the `*SettingsForm.php` found in `src/Entity/Form`.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional exercises
 
-*   Create an module to create a new custom entity using the Console module.
-*   Define a new content type, with revisions enabled, that defaults to being promoted to the front page.
-*   Create an entity manually.
+<!-- @task, "text" : "Create an module to create a new custom entity using the Console module." -->
+<!-- @task, "text" : "Define a new content type, with revisions enabled, that defaults to being promoted to the front page." -->
+<!-- @task, "text" : "Create an entity manually." -->
 
 <!-- @section -->
 

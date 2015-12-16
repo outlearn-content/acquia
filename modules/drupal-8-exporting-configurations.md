@@ -43,6 +43,8 @@ There are three methods that you can use to expose the configuration files:
   drush config-export
   ```
 
+<!-- @task, "text" : "Export the configuration needed for your content type as a preparation to have it included by your own module." -->
+
 Regardless of which route one takes, the next step is the same: Remove the first line containing the `UUID`.
 
 <!-- @section -->
@@ -81,6 +83,8 @@ It's time to review the progress.
 
 We now have a working module which provides the External content type! Now that we've verified the module works, navigate back to **extend**, and then uninstall the External Link Content Type module in preparation for the next step.
 
+<!-- @task, "text" : "Create an empty placeholder module as described above that is going to provide your content type." -->
+
 <!-- @section -->
 
 ## Adding the field configuration files
@@ -98,3 +102,5 @@ Move the remaining configuration files we exported earlier in the lesson to the 
 Then navigate to **extend** and enable the **External Link Content Type** module. Now navigate to `/node/add/external` and view the **node add** form. The **body**, **URL**, and **screenshot** fields are present.
 
 ![enabled-external.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/enabled-external.png)
+
+<!-- @task, "text" : "Extend the module as described so it provides all the field-level configuration for your content type as well." -->
