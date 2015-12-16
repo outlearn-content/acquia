@@ -3,12 +3,12 @@
 
   "paths" : [
     {
-      "name" : "building-modules-drupal8",
-      "title" : "Building modules with Drupal 8",
-      "description" : "To be written",
+      "name" : "building-modules-drupal8-part1",
+      "title" : "Building modules with Drupal 8 - Part 1",
+      "description" : "Basics: Symfony, Controllers, Menu, Blocks, Configuration, Forms, and their management",
       "privacy" : "public",
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
-      "coverColor" : "#5ea52f",
+      "coverColor" : "#28a9e0",
       "pages" : [
         {"module" : "acquia-building-modules-intro"},
         {"module" : "examples-module-symfony-controllers-and-menu"},
@@ -19,7 +19,17 @@
         {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"},
         {"module" : "drupal-8-configuration-forms-and-cm"},
         {"module" : "drupal-8-configuration-and-config-object"},
-        {"module" : "drupal-8-configuration-lab-and-other-information"},
+        {"module" : "drupal-8-configuration-lab-and-other-information"}
+      ]
+    },
+    {
+      "name" : "building-modules-drupal8-part2",
+      "title" : "Building modules with Drupal 8 - Part 2",
+      "description" : "Entities and Fields",
+      "privacy" : "public",
+      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverColor" : "#28a9e0",
+      "pages" : [
         {"module" : "drupal-8-entities-content-entities-and-configuration-entities"},
         {"module" : "drupal-8-entities-lab"},
         {"module" : "drupal-8-fields-entities"},
@@ -29,7 +39,17 @@
         {"module" : "drupal-8-loading-entities"},
         {"module" : "drupal-8-load-and-query-entities-lab"},
         {"module" : "drupal-8-loading-and-editing-fields"},
-        {"module" : "drupal-8-loading-fields-examples"},
+        {"module" : "drupal-8-loading-fields-examples"}
+      ]
+    },
+    {
+      "name" : "building-modules-drupal8-part3",
+      "title" : "Building modules with Drupal 8 - Part 3",
+      "description" : "Mastering: Services, Dependency Injection, Containers, Creating and Theming elements, Front-end Libraries, Testing, Review",
+      "privacy" : "public",
+      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverColor" : "#28a9e0",
+      "pages" : [
         {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
         {"module" : "drupal-8-services-and-controllers"},
         {"module" : "drupal-8-dependency-injection"},
