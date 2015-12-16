@@ -203,7 +203,8 @@ class QueryExampleController extends ControllerBase {
 
 
 
-The next step is to edit the existing routing file to call the public functions:[Download this file](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/archive/79b8953fd5cdad77cfb675ff2d5d8c68416e0590.zip
+The next step is to edit the existing routing file to call the public functions:
+[Download this file](https://gist.github.com/acquialibrary/da9ea858ccfcaec10c40/archive/79b8953fd5cdad77cfb675ff2d5d8c68416e0590.zip)
 
 ```
 query_example.simple:  
