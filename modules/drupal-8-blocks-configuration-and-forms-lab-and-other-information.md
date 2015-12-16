@@ -68,7 +68,7 @@ These additional exercises can expand your knowledge and understanding of the co
 
 *   Manually recreate the pieces of the module used to add a descriptive page for the `block_example` such as the Controller, YAML files, and Plugin to create what the true `block_example` module possesses:
 
-    _Examples module_ - List of files for `block_example`
+_Examples module_ - List of files for `block_example`
 
 ```
 drwxr-xr-x 5 username staff 170 Aug 28 12:46 src
@@ -78,7 +78,7 @@ drwxr-xr-x 5 username staff 170 Aug 28 12:46 src
 -rw-r--r-- 1 username staff 171 Aug 28 12:46 block_example.info.yml
 ```
 
-    _Examples module_ - List of files for `src/Plugin/Block`
+_Examples module_ - List of files for `src/Plugin/Block`
 
 ```
 -rw-r--r-- 1 username staff 990 Aug 28 12:46 ExampleUppercaseBlock.php
@@ -86,7 +86,7 @@ drwxr-xr-x 5 username staff 170 Aug 28 12:46 src
 -rw-r--r-- 1 username staff 1894 Aug 28 12:46 ExampleConfigurableTextBlock.php
 ```
 
-    We don't use the `ExampleUppercaseBlock.php` file but we do create both the `ExampleEmptyBlock` and `ExampleConfigurableTextBlock`.
+We don't use the `ExampleUppercaseBlock.php` file but we do create both the `ExampleEmptyBlock` and `ExampleConfigurableTextBlock`.
 
 *   Create a block which displays a rotating banner of images.
 *   Create a form block or page which can send an e-mail to an address provided in the form.

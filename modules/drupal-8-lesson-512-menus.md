@@ -141,14 +141,13 @@ For all practical purposes this is the least we need to write in the module in o
 
 
 > **Namespaces in PHP**
-"Although any valid PHP code can be contained in a namespace, only the following types of code are affected by namespaces: classes (including abstracts and traits), interfaces, functions and constants. Namespaces are declared using the namespace keyword. A file containing a namespace must declare the namespace at the top of the file before any other code - with one exception: the declare keyword." PHP Net, [Defining Namespaces](http://php.net/manual/en/language.namespaces.definition.php)
+> "Although any valid PHP code can be contained in a namespace, only the following types of code are affected by namespaces: classes (including abstracts and traits), interfaces, functions and constants. Namespaces are declared using the namespace keyword. A file containing a namespace must declare the namespace at the top of the file before any other code - with one exception: the declare keyword." PHP Net, [Defining Namespaces](http://php.net/manual/en/language.namespaces.definition.php)
 
 
 Following the namespace declaration we then implement the use operator to allow us to reuse a method created as part of the URL class which is part of Drupal 8 core.
 
 > **Using the use operator**
-
-"The ability to refer to an external fully qualified name with an alias, or importing, is an important feature of namespaces. This is similar to the ability of unix-based filesystems to create symbolic links to a file or to a directory... In PHP, aliasing is accomplished with the use operator." PHP Net, [Using namespaces: Aliasing/Importing](http://php.net/manual/en/language.namespaces.importing.php)
+> "The ability to refer to an external fully qualified name with an alias, or importing, is an important feature of namespaces. This is similar to the ability of unix-based filesystems to create symbolic links to a file or to a directory... In PHP, aliasing is accomplished with the use operator." PHP Net, [Using namespaces: Aliasing/Importing](http://php.net/manual/en/language.namespaces.importing.php)
 
 ### How do I know the path for the namespace and use operator?
 

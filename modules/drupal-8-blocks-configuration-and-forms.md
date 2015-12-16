@@ -78,10 +78,17 @@ In the Example project you will find the `block_example` module which contains t
 
 [view raw](https://gist.github.com/acquialibrary/196dca7dd1edbbf32bbe/raw/0e457a5e87a54e7899640b424886070e8a8e26d5/ExampleEmptyBlock.php) [ExampleEmptyBlock.php](https://gist.github.com/acquialibrary/196dca7dd1edbbf32bbe#file-exampleemptyblock-php) hosted with ❤ by [GitHub](https://github.com)
 
-Classes and annotationsAll class files must begin with defining the namespace for the class. After creating the [namespace](https://docs.acquia.com/articles/php.net/manual/en/language.namespaces.php) for the class, we extend the Drupal core `BlockBase` class to create the `ExampleEmptyBlock` class. With that, we can use Drupal PHP Annotations, introduced with Drupal 8.Generic PHP Annotations are self contained comment text which allows the auto-discovery of metadata and registration information regarding a class file. The example above has annotations specifically for **Example: empty block**, located in 2nd set of comment text. By utilizing annotations we notify Drupal that we want to register a new block type (`@Block`) with the id of `example_empty` and the **admin_label** of `Example: empty block`, which is passed through the translation system prior to being used.The `{@inheritdoc}` annotation can be used in a class when you are overriding a class function. This annotation tells the system to use the parent class's annotation.
+#### Classes and annotations
+
+All class files must begin with defining the namespace for the class. After creating the [namespace](https://docs.acquia.com/articles/php.net/manual/en/language.namespaces.php) for the class, we extend the Drupal core `BlockBase` class to create the `ExampleEmptyBlock` class. With that, we can use Drupal PHP Annotations, introduced with Drupal 8.
+
+Generic PHP Annotations are self contained comment text which allows the auto-discovery of metadata and registration information regarding a class file. The example above has annotations specifically for **Example: empty block**, located in 2nd set of comment text. By utilizing annotations we notify Drupal that we want to register a new block type (`@Block`) with the id of `example_empty` and the **admin_label** of `Example: empty block`, which is passed through the translation system prior to being used.
+
+The `{@inheritdoc}` annotation can be used in a class when you are overriding a class function. This annotation tells the system to use the parent class's annotation.
 
 > **Note**:
 Drupal will not discover the blocks unless they are properly annotated.
 
 This extends the `BlockBase` class into our `ExampleEmptyBlock`, inside which we implement one method: `build()`. This is one of the most common ad important methods, as it returns a renderable array which the block will print out.
+
 Clear the caches, navigate to the layout configuration page **`/admin/structure/block`**, and although in Drupal 7 you would be able to see your new block under the disabled section, in Drupal 8 you have to click **Place Block** to see your new block as a choice:
