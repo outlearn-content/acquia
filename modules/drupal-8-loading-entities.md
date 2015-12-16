@@ -106,6 +106,7 @@ $nodes = entity_load_multiple('node', $nids);
 ## Creating the Controller
 
 We will bring together all of these pieces now. We will add the query objects and use those in our functions to obtain lists of node IDs using an example module `QueryExampleController.php`.
+
 [Download this file](https://gist.github.com/acquialibrary/dbb72b25ba9c04eaef53/archive/613bdd63631fb18dc4066e108174cd38206e6f78.zip).
 
 ```php

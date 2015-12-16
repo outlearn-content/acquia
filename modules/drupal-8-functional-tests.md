@@ -173,9 +173,9 @@ This pattern is VERY similar to unit tests, but uses `Functional` in the path an
     ### Run the functional tests
 
     To run Functional tests, we need to tell PHPUnit where our site can be reached. This is done in PhpStorm by setting an environmental variable with the configuration setting.
-*   Open PhpStorm.
-*   In the **Command Line** section, edit the **Environment** variables.
-*   Add a new item with the name `SIMPLETEST_BASE_URL` and value set to your local environment.
+    1.   Open PhpStorm.
+    2.   In the **Command Line** section, edit the **Environment** variables.
+    3.   Add a new item with the name `SIMPLETEST_BASE_URL` and value set to your local environment.
 
 [![ConfigurePhpUnitBrowserTestBase.jpg](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/ConfigurePhpUnitBrowserTestBase.jpg)](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/ConfigurePhpUnitBrowserTestBase.jpg)
 
@@ -266,7 +266,7 @@ An example SimpleTest, `src/Tests/TestExampleUserTest.php`:
 php core/scripts/run-tests.sh --verbose --url http://d8.dev/ --color test_example
 ```
 
-    You will want to use a --url option that matches your local setup. The --color option will color code the results which make them easier to skim. At the end of the command, we add our module name so that the tests are run only on that module.
+You will want to use a --url option that matches your local setup. The --color option will color code the results which make them easier to skim. At the end of the command, we add our module name so that the tests are run only on that module.
 
 <!-- @section -->
 
