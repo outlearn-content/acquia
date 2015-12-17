@@ -65,3 +65,5 @@ It's not ideal, but it seems simple enough. You can print the entire element, a 
 *   **Template or render function**
 
     Drupal 8 uses Twig — most of the time. In rare cases, a function does the job of the template and returns markup. It's good to be aware that this is out there, but it should probably be avoided going forward.
+
+<!-- @task, "text" : "Make sure you have understood the render array patterns." -->

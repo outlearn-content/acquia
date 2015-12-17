@@ -110,3 +110,5 @@ And `src/TestExampleConversions.php`:
 ```
 
 [view raw](https://gist.github.com/acquialibrary/741fbddc865fc8ea335f/raw/d0e967898d950cdd8e5c202e6a20f3efb75a8bc6/TestExampleConversions.php) [TestExampleConversions.php](https://gist.github.com/acquialibrary/741fbddc865fc8ea335f#file-testexampleconversions-php) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Prepare a module for testing as described above." -->

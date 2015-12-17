@@ -95,3 +95,5 @@ This file provides the code to create the mood (`src/DIMoodRing.php`):
  }
 ```
 [view raw](https://gist.github.com/acquialibrary/88251c080bee4dc98719/raw/aae64579c52bf44101b59370714edd41e4e9c4f7/DIMoodRing.php) [DIMoodRing.php](https://gist.github.com/acquialibrary/88251c080bee4dc98719#file-dimoodring-php) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Set up the basics of a module as described above." -->

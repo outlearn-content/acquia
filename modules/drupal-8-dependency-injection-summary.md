@@ -27,8 +27,8 @@ We reviewed services, what they are and how they work — they're great way of m
 
 ## Additional exercises
 
-1.  Add an additional function that could act as a service.
-2.  Demonstrate both the static and dependency injection versions of the function.
-3.  Identify in core one to three static uses of functions that you believe should instead be dependency injection.
-4.  Describe two different use cases for when you'd want to use dependency injection.
-5.  Describe one use case for when you would want to use a static function instead of dependency injection.
+<!-- @task, "text" : "Add an additional function that could act as a service." -->
+<!-- @task, "text" : "Demonstrate both the static and dependency injection versions of the function." -->
+<!-- @task, "text" : "Identify in core one to three static uses of functions that you believe should instead be dependency injection." -->
+<!-- @task, "hasDeliverable" : true, "text" : "Describe two different use cases for when you'd want to use dependency injection." -->
+<!-- @task, "hasDeliverable" : true, "text" : "Describe one use case for when you would want to use a static function instead of dependency injection." -->

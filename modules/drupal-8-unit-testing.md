@@ -61,6 +61,8 @@ PHPUnit will run many tests. To restrict the testing area to just a folder (our 
 5.  Browse to the `test_example` module.
 6.  Click **Save**.
 
+<!-- @task, "text" : "Configure PHPUnit in PhpStorm and make sure it works." -->
+
 <!-- @section -->
 
 ## Add a unit test
@@ -131,6 +133,8 @@ The `tests/src/Unit/TestExampleConversionsTest.php` file:
 
 You can run the unit test in PhpStorm using the **Run** button. Running the configuration that tests only the module will be faster.
 
+<!-- @task, "text" : "Add a unit test to your module and run it." -->
+
 <!-- @section -->
 
 ## Add a more complex unit test
@@ -172,6 +176,8 @@ $this->assertEquals($expectedValue, $this->conversionService->centimeterToInch($
 *   **Data Provider Arguments**
 
     Now that we are using a data provider, we can add arguments to our test method. We are passing in an array of two values, so our test method should have two corresponding arguments.
+
+<!-- @task, "text" : "Add a data provider with a more complex unit test in your module and run it." -->
 
 <!-- @section -->
 

@@ -80,3 +80,5 @@ If we know the name of a class in PhpStorm, we can easily navigate to that class
 ```
 public function setAccount(AccountInterface $account) {}
 ```
+
+<!-- @task, "text" : "Explore the different ways PhpStorm can help you in dealing with dependency injection and other common patterns." -->

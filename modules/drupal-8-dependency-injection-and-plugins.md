@@ -149,6 +149,8 @@ We will now create a block that functions similarly to our controller. We add de
 
 [view raw](https://gist.github.com/acquialibrary/c6a176c864c645ab707c/raw/2b3031046317f9b27e30f7dfb9010a2833ad0754/DIExample.php) [DIExample.php](https://gist.github.com/acquialibrary/c6a176c864c645ab707c#file-diexample-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Make sure you have understood how to inject dependency to a plugin by implementing a block as described above." -->
+
 <!-- @section -->
 
 ## When you cannot use dependency injection
@@ -177,3 +179,5 @@ $mood_ring_service = \Drupal::service('di_example.mood_ring');
 $mood = $mood_ring_service->getMood();
 }
 ```
+
+<!-- @task, "text" : "Make sure you have understood what is the single reason to avoid using dependency injection: static context." -->

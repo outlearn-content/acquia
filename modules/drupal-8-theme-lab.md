@@ -42,11 +42,13 @@ Drupal has changed a lot over the years and in many of those cases, it has suppo
 15.  Explore the generated page for debugging information.
 16.  Modify the Twig template and add `kint()` debugging functions.
 
+<!-- @task, "text" : "Make sure you have done everything listed above. Go back and correct yourself in case you missed something." -->
+
 <!-- @section -->
 
 ## Additional exercises
 
-*   Improve the look of the returned nodes by adding helpful HTML to the Twig file and css of your choice.
-*   Define three additional variables to inject into the Twig template. Use the variables in the template file.
-*   Modify a variable with at least one [filter](http://twig.sensiolabs.org/doc/filters/index.html) and one [function](http://twig.sensiolabs.org/doc/functions/index.html).
-*   Use escaping to ignore the second variable that you set above.
+<!-- @task, "text" : "Improve the look of the returned nodes by adding helpful HTML to the Twig file and css of your choice." -->
+<!-- @task, "text" : "Define three additional variables to inject into the Twig template. Use the variables in the template file." -->
+<!-- @task, "text" : "Modify a variable with at least one [filter](http://twig.sensiolabs.org/doc/filters/index.html) and one [function](http://twig.sensiolabs.org/doc/functions/index.html)." -->
+<!-- @task, "text" : "Use escaping to ignore the second variable that you set above." -->

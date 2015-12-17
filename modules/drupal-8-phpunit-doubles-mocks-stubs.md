@@ -101,3 +101,5 @@ return $this->testValue;
 }
 ));
 ```
+
+<!-- @task, "text" : "Make sure you have understood the power of mocks and how to unleash those powers." -->

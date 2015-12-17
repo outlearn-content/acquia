@@ -47,6 +47,8 @@ Symfony makes a similar statement:
 
 In Lesson 3, we discussed configuration and introduced the `ConfigFormBase` class for the services_example module. It is one class that uses dependency injection to provide a config object. The `config()` method of the parent class is used to retrieve a config object populated with the `demo.settings` simple configuration, so you might say that the method is injecting the variables (settings).
 
+<!-- @task, "hasDeliverable" : true, "text" : "Describe what a service is." -->
+
 <!-- @section -->
 
 ## Dependency Injection
@@ -141,3 +143,5 @@ $nodes = $node_storage->loadMultiple($nids);
 ```
 
 This approach is similar to how core loads the services it needs.
+
+<!-- @task, "text" : "Make sure you have understood everything about dependency injection as described above." -->

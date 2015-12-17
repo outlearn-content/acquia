@@ -90,6 +90,8 @@ $output = [
 ];
 ```
 
+<!-- @task, "text" : "Create and attach a library to a component as described above." -->
+
 <!-- @section -->
 
 ## Update the Plugin #pre_render function
@@ -139,6 +141,8 @@ Finally, update the file `src/Element/MyElement.php`:
 
 [view raw](https://gist.github.com/acquialibrary/571b269d5c6d56afc115/raw/962f52db459fe1952df9411807976b7125a2cccf/MyElement.php) [MyElement.php](https://gist.github.com/acquialibrary/571b269d5c6d56afc115#file-myelement-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Update the #pre_render function so your library gets attached to your element." -->
+
 ## JavaScript patterns in Drupal 8
 
 The JavaScript best practices are largely the same as in Drupal 7\. We wrap the jQuery object in a closure and attach functions to Drupal.behaviors. The major change is that the settings variable is now `drupalSettings`.
@@ -185,3 +189,5 @@ These are the files you should have at the end of this exercise:
 *   `src/Element/MyElement.php`
 *   `src/Controller/ThemeExampleController.php`
 *   `templates/my-element.html.twig`
+
+<!-- @task, "text" : "Make sure you have all these files (or equivalents)." -->

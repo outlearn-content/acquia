@@ -55,6 +55,8 @@ requirements:
 _access: 'TRUE'
 ```
 
+<!-- @task, "text" : "Prepare a module for Services, Containers and DI as described above." -->
+
 <!-- @section -->
 
 ## Creating a Service
@@ -108,3 +110,5 @@ The `ServiceExampleService.php` file looks very similar to controllers. We descr
 ```
 
 [view raw](https://gist.github.com/acquialibrary/baab3196a591cadcb7cc/raw/446300388665064979cd781701983c80e51a20b5/ServiceExampleService.php) [ServiceExampleService.php](https://gist.github.com/acquialibrary/baab3196a591cadcb7cc#file-serviceexampleservice-php) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Extend your module as described above." -->

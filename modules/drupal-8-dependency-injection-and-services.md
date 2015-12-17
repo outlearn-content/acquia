@@ -104,6 +104,10 @@ This service provides a single `getResponseToMood()` method which will return a 
 ```
 [view raw](https://gist.github.com/acquialibrary/28011356948e115a8028/raw/61c34770a76892aebe2efd8dcae6db71406f2802/DITalk.php) [DITalk.php](https://gist.github.com/acquialibrary/28011356948e115a8028#file-ditalk-php) hosted with ❤ by [GitHub](https://github.com)
 
+<!-- @task, "text" : "Make sure you have understood how to inject service dependencies into services." -->
+
 When PhpStorm recognizes the class names, it will automatically add use statements if needed. One is needed for AccountProxy because it is using a different namespace, but one is not needed for DIMoodRing because it is using our same module namespace.
 
 After you complete the `__construct()` function, add a comment with `/**`. PhpStorm will automatically provide documentation on the parameters and link to their full class paths. This will be helpful for autocompletion. If you define these class properties and similarly add comments, PhpStorm will provide the documentation for the property types. If for some reason PhpStorm does not do this, it's recommended to fill this out so that autocompletion is available.
+
+<!-- @task, "text" : "Make sure your IDE (like PhpStorm) really helps you by checking that it automatically adds the use lines as needed." -->

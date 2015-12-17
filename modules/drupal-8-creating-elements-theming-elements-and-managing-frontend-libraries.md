@@ -76,6 +76,8 @@ In Drupal 8, we bundle all JavaScript and css associated with an element into a 
 
 Aside from a few small changes, the JavaScript and CSS files themselves are mostly the same as they were in previous versions of Drupal.
 
+<!-- @task, "text" : "Make sure you have understood the definitions above." -->
+
 <!-- @section -->
 
 ## Define our element
@@ -158,6 +160,8 @@ _access: 'TRUE'
 ```
 
 [view raw](https://gist.github.com/acquialibrary/a0d02ba0529c5fddd9e7/raw/ce2e1d1ea45fe92780c65b56812e471936dd6146/ThemeExampleController.php) [ThemeExampleController.php](https://gist.github.com/acquialibrary/a0d02ba0529c5fddd9e7#file-themeexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Set up a module for a new element as described above." -->
 
 <!-- @section -->
 
@@ -267,6 +271,8 @@ Our plugin contains a [`#pre_render`](https://api.drupal.org/api/drupal/8/search
 ```
 
 [view raw](https://gist.github.com/acquialibrary/a4035855cbcf36ed0703/raw/998301b282eebf4e5dfa6e3a65a0c1cdbd9ed247/MyElement.php) [MyElement.php](https://gist.github.com/acquialibrary/a4035855cbcf36ed0703#file-myelement-php) hosted with ❤ by [GitHub](https://github.com)
+
+<!-- @task, "text" : "Extend your module with an annotated RenderElement plugin as described above." -->
 
 ### hook_theme()
 

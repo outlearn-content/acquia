@@ -77,6 +77,8 @@ When referring to templates, [Twig's documentation states](http://twig.sensiolab
 
 Drupal passes variables to the template in the theme layer for manipulation in the template. The variables themselves may then have attributes or elements you can access, though these are not required.
 
+<!-- @task, "text" : "Extend your module with your first Twig template as described above." -->
+
 <!-- @section -->
 
 ## Debugging Twig
@@ -121,3 +123,5 @@ We can explore a single variable:
 ```
 
 In this example, you can also see the Twig comment format `{# comment #}`.
+
+<!-- @task, "text" : "Explore the ways you can debug Twig templates." -->

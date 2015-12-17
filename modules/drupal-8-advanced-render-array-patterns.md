@@ -51,6 +51,8 @@ You can then use these attributes in a Twig template:
 
 After the preprocess functions act on the `attributes` variables, they are converted into an object that allows them to be easily modified and printed in Twig. This is done in `render()` in `ThemeManager.php`.
 
+<!-- @task, "text" : "Make sure you have understood how to add HTML attributes to your custom elements." -->
+
 <!-- @section -->
 
 ## Wrappers (#theme_wrapper) and containers
@@ -83,6 +85,8 @@ has_parent ? 'form-wrapper',
 <div{{ attributes.addClass(classes) }}>{{ children }}</div>
 ```
 
+<!-- @task, "text" : "Make sure you have understood how to add classy wrappers around your elements." -->
+
 <!-- @section -->
 
 ## Exploring the element render array flow
@@ -98,3 +102,5 @@ The reasoning behind picking this pattern is for consistency with the rest of Dr
 ### Differences from core
 
 The main difference between this pattern and core is that most of core also uses `template_preprocess_hook` which seems redundant with `#pre_render`. Some of core uses both because of some quirks with the systems used. Working around those quirks may add polish, but comes at the cost of complexity and separating logic among several places.
+
+<!-- @task, "text" : "Make sure you have understood the element render array flow and the differences from core." -->

@@ -96,6 +96,8 @@ indexes: { }
 persist_with_no_fields: false
 ```
 
+<!-- @task, "text" : "Add a user field as a preparation for functional testing." -->
+
 ### Add a functional test
 
 To create a functional test, create a new file in `tests/src/Functional/` that ends in `test.php`. As with most Drupal 8 features, we create a test by creating a class that extends the base class `BrowserTestBase`. Use the namespace `Drupal\Tests\[module_name]\Functional` for all of test classes.
@@ -180,6 +182,8 @@ This pattern is VERY similar to unit tests, but uses `Functional` in the path an
 [![ConfigurePhpUnitBrowserTestBase.jpg](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/ConfigurePhpUnitBrowserTestBase.jpg)](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/ConfigurePhpUnitBrowserTestBase.jpg)
 
 You can run the tests the same way you run unit tests, using the **Run** button.
+
+<!-- @task, "text" : "Add a functional test as described above and run it." -->
 
 <!-- @section -->
 
@@ -267,6 +271,8 @@ php core/scripts/run-tests.sh --verbose --url http://d8.dev/ --color test_exampl
 ```
 
 You will want to use a --url option that matches your local setup. The --color option will color code the results which make them easier to skim. At the end of the command, we add our module name so that the tests are run only on that module.
+
+<!-- @task, "text" : "Add a web test for something that can be only tested in a browser." -->
 
 <!-- @section -->
 

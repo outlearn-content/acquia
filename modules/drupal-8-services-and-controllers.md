@@ -167,3 +167,5 @@ The final controller is `ServiceExampleController.php`:
 [view raw](https://gist.github.com/acquialibrary/2e60c0efafd0385acaac/raw/8e1c0b9c1607f1e8b24d743b5ff1ccce5ff823f6/ServiceExampleController.php) [ServiceExampleController.php](https://gist.github.com/acquialibrary/2e60c0efafd0385acaac#file-serviceexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)
 
 You can now enable your module and go to `/examples/service-example/simple` to see it all come together!
+
+<!-- @task, "text" : "Add your service to your controller via dependency injection as described above." -->

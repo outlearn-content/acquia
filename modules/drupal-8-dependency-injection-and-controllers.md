@@ -91,3 +91,5 @@ It usually makes sense to extend the base class when possible. Extending `Contro
 *   **Route Method**
 
     Our `conversationAboutMood()` method is very simple — it uses our service to get a message and then returns a render array with this message.
+
+<!-- @task, "text" : "Extend a controller in your module with an injected dependency on your own service." -->
