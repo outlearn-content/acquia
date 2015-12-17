@@ -4,7 +4,7 @@
   "paths" : [
     {
       "name" : "building-modules-drupal8-part1",
-      "title" : "Building modules with Drupal 8 - Part 1",
+      "title" : "Building modules with Drupal 8 - Part 1: Basics",
       "description" : "Basics: Symfony, Controllers, Menu, Blocks, Configuration, Forms, and their management",
       "privacy" : "public",
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
@@ -24,7 +24,7 @@
     },
     {
       "name" : "building-modules-drupal8-part2",
-      "title" : "Building modules with Drupal 8 - Part 2",
+      "title" : "Building modules with Drupal 8 - Part 2: Entities and Fields",
       "description" : "Entities and Fields",
       "privacy" : "public",
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
@@ -44,7 +44,7 @@
     },
     {
       "name" : "building-modules-drupal8-part3",
-      "title" : "Building modules with Drupal 8 - Part 3",
+      "title" : "Building modules with Drupal 8 - Part 3: Mastering",
       "description" : "Mastering: Services, Dependency Injection, Containers, Creating and Theming elements, Front-end Libraries, Testing, Review",
       "privacy" : "public",
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",

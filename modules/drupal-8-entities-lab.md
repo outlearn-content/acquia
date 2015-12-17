@@ -47,7 +47,7 @@ Regardless of which of the three approaches you choose (manual, the user interfa
 
 ## Additional exercises
 
-<!-- @task, "text" : "Create an module to create a new custom entity using the Console module." -->
+<!-- @task, "text" : "Create a module to create a new custom entity using the Console module." -->
 <!-- @task, "text" : "Define a new content type, with revisions enabled, that defaults to being promoted to the front page." -->
 <!-- @task, "text" : "Create an entity manually." -->
 
