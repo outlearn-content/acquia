@@ -138,7 +138,7 @@ Now that you're in the correct directory, it's time to create the module's `.inf
 1.  Create a new file named `page_example.info.yml`.
 2.  Add the following code to the file:
 
-```
+```yml
 name: 'Page example'
 type: module
 description: 'An example module showing how to define a page to be displayed at a given URL.'
