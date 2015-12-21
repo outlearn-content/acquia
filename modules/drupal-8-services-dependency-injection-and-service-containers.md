@@ -36,7 +36,7 @@ We will create the following files. The previous lessons explained how to create
 
 The `service_example.info.yml` file:
 
-```
+```yml
 name: 'Service example'
 type: module
 description: 'An example module showing how to create and use a service.'
@@ -46,13 +46,13 @@ core: 8.x
 
 The `service_example.routing.yml` file:
 
-```
+```yml
 service_example_simple:
-path: 'examples/service-example/simple'
-defaults:
-_controller: '\Drupal\service_example\Controller\ServiceExampleController::simple_example'
-requirements:
-_access: 'TRUE'
+  path: 'examples/service-example/simple'
+  defaults:
+    _controller: '\Drupal\service_example\Controller\ServiceExampleController::simple_example'
+  requirements:
+    _access: 'TRUE'
 ```
 
 <!-- @task, "text" : "Prepare a module for Services, Containers and DI as described above." -->
@@ -69,10 +69,10 @@ In the `service_example.services.yml` file, the top level is a listing of servic
 
 `service_example.services.yml`
 
-```
+```yml
 services:
-service_example.example_service:
-class: Drupal\service_example\ServiceExampleService
+  service_example.example_service:
+    class: Drupal\service_example\ServiceExampleService
 ```
 
 The `ServiceExampleService.php` file looks very similar to controllers. We describe what class is defined, we define the namespace (`Drupal\module_name`), we create a public function and some internal logic. The internal logic for this service is a single variable which is set to `Student` when the service is created. When other code uses this service, they will be able to call the `getServiceExampleValue()` function which will return the string `Student`.

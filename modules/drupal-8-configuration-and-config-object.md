@@ -115,18 +115,18 @@ Below you will find the code after modification.
 
 **Examples project: configform_example.links.menu.yml**
 
-```
+```yml
 configform_example.form:
-title: Config Form Example
-route_name: configform_example_form
-parent: system.admin_reports
+  title: Config Form Example
+  route_name: configform_example_form
+  parent: system.admin_reports
 ```
 
 ### Yaml configurations for configform_example module
 
 Place this info YAML file in the root of the configform_example module in the `configform_example.info.yml` file:
 
-```
+```yml
 name: Config Form example
 type: module
 description: 'An example module showing how to define a configuration form to be displayed at a given URL.'
@@ -136,14 +136,14 @@ core: 8.x
 
 Place this routing YAML file `configform_example.routing.yml` at the same level:
 
-```
+```yml
 configform_example_form:
-path: 'examples/configform_example/form'
-defaults:
-_form: '\Drupal\configform_example\Form\ConfigFormExampleConfigForm'
-_title: 'Config Form'
-requirements:
-_permission: 'access simple page'
+  path: 'examples/configform_example/form'
+  defaults:
+    _form: '\Drupal\configform_example\Form\ConfigFormExampleConfigForm'
+    _title: 'Config Form'
+  requirements:
+    _permission: 'access simple page'
 ```
 
 ## Configuration Inspector
@@ -152,14 +152,14 @@ From drupal.org, "Configuration inspector for Drupal 8 uses the core built-in co
 
 After it is installed, the Configuration Inspector project provides a "raw data" link for your custom configuration settings, but the list, tree, and form links are unavailable (but those links are provided for all core and many other contrib settings). To facilitate this, you can add a schema definition for your settings, such as the following `schema.yml` file in `./config/schema/configform_example.schema.yml`:
 
-```
+```yml
 configform_example.settings:
-type: mapping
-label: 'Configform Example settings'
-mapping:
-email_address:
-type: string
-label: 'This is the example email address.
+  type: mapping
+  label: 'Configform Example settings'
+  mapping:
+    email_address:
+      type: string
+      label: 'This is the example email address.
 ```
 
 After reinstalling the configform_example module, you will have access to the additional functionality provided by the Configuration Inspector.

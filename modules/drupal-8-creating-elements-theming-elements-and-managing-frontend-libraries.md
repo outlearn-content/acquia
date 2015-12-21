@@ -104,7 +104,7 @@ We are going to quickly flesh out our module and provide an example page that ho
 
 #### theme_example.info.yml
 
-```
+```yml
 name: Theme Example
 type: module
 description: Example showing how to add a custom element and add JavaScript and CSS as a library
@@ -114,13 +114,13 @@ package: Examples
 
 #### theme_example.routing.yml
 
-```
+```yml
 theme_example.simple:
-path: 'examples/theme-example/simple'
-defaults:
-_controller: '\Drupal\theme_example\Controller\ThemeExampleController::simple'
-requirements:
-_access: 'TRUE'
+  path: 'examples/theme-example/simple'
+  defaults:
+    _controller: '\Drupal\theme_example\Controller\ThemeExampleController::simple'
+  requirements:
+    _access: 'TRUE'
 ```
 
 #### src/Controller/ThemeExampleController.php

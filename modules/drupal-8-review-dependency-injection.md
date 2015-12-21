@@ -25,7 +25,7 @@ We'll create the example module `di_example` that contains two services, one con
 
 #### di_example.info.yml
 
-```
+```yml
 name: Dependency Injection Example
 type: module
 description: Examples on how to use dependency injection
@@ -37,24 +37,24 @@ package: Examples
 
 In this file, we'll have a controller to create one page that provides a printed message we are calling a `conversation`. This conversation will be about the mood of a user.
 
-```
+```yml
 di_example.conversation_mood:
-path: '/examples/conversation/mood'
-defaults:
-_controller: '\Drupal\di_example\Controller\DIController::conversationAboutMood'
-requirements:
-_access: 'TRUE'
+  path: '/examples/conversation/mood'
+  defaults:
+    _controller: '\Drupal\di_example\Controller\DIController::conversationAboutMood'
+  requirements:
+    _access: 'TRUE'
 ```
 
 #### di_example.services.yml
 
 This service is used to inject into our other components. It provides a mood through a random mood ring system. In it, we will provide a list of moods and a `getMood()` function that returns a random mood.
 
-```
+```yml
 services:
-# A service that will let us get a mood.
-di_example.mood_ring:
-class: Drupal\di_example\DIMoodRing
+  # A service that will let us get a mood.
+  di_example.mood_ring:
+    class: Drupal\di_example\DIMoodRing
 ```
 
 This file provides the code to create the mood (`src/DIMoodRing.php`):

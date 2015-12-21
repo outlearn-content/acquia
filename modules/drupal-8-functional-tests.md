@@ -31,15 +31,15 @@ For the first test, we'll add a field to the user entity and then test that the 
 
 #### test_example.info.yml
 
-```
+```yml
 name: Test Example
 type: module
 description: Example showing how to create tests
 core: 8.x
 package: Examples
 dependencies:
-- user
-- options
+  - user
+  - options
 ```
 
 #### config/install/field.field.user.user.test_status.yml
@@ -48,41 +48,40 @@ Use this file to define the field:
 
 [Download this file](https://gist.github.com/acquialibrary/df98e2a88973be66fe42/archive/85fe9b4f43b32fee938a80b79de6d2969c581519.zip).
 
-```
- langcode: en
- status: true
- dependencies:
- config:
- - field.storage.user.test_status
- id: user.user.test_status
- field_name: test_status
- entity_type: user
- bundle: user
- label: test_status
- description: ''
- required: false
- translatable: false
- default_value:
- -
- value: 0
- default_value_callback: ''
- settings:
- on_label: 'On'
- off_label: 'Off'
+```yml
+langcode: en
+status: true
+dependencies:
+  config: - field.storage.user.test_status
+id: user.user.test_status
+field_name: test_status
+entity_type: user
+bundle: user
+label: test_status
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
 
- field_type: boolean
+field_type: boolean
 ```
 
 [view raw](https://gist.github.com/acquialibrary/df98e2a88973be66fe42/raw/85fe9b4f43b32fee938a80b79de6d2969c581519/field.field.user.user.test_status.yml) [field.field.user.user.test_status.yml](https://gist.github.com/acquialibrary/df98e2a88973be66fe42#file-field-field-user-user-test_status-yml) hosted with ❤ by [GitHub](https://github.com)
 
 config/install/field.storage.user.test_status.yml
 
-```
+```yml
 langcode: en
 status: true
 dependencies:
-module:
-- user
+  module:
+    - user
 id: user.test_status
 field_name: test_status
 entity_type: user

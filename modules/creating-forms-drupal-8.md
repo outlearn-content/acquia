@@ -208,15 +208,15 @@ In the code example above everything should resemble building a form in Drupal 7
 
     To use this form, a route must be defined and added to the already existing `page_example.routing.yml` file:
 
-    ```
-    page_example_form:  
-    path: '/examples/page_example/form'  
-    defaults:  
+```yml
+page_example_form:  
+  path: '/examples/page_example/form'  
+  defaults:  
     _form: '\Drupal\page_example\Form\PageExampleForm'  
     _title: 'Demo Form'  
-    requirements:  
+  requirements:  
     _permission: 'access simple page'
-    ```
+```
 
     Instead of `_controller` under defaults, we use `_form` to specify that the target is a form class. The value is therefore the class name we just created.
 

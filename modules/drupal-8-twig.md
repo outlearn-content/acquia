@@ -94,10 +94,10 @@ Enabling Twig debugging will add markup to the page which tells you information 
 
 In brief, you enable Twig debugging in `sites/default/services.yml` file with the following:
 
-```
+```yml
 parameters:
-twig.config:
-debug: true
+  twig.config:
+    debug: true
 ```
 
 You then use developer tools with comments enabled to allow viewing information about the template. It may be difficult to find specific documentation on the best practices for using this method.

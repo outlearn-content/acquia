@@ -53,9 +53,9 @@ Open the Find in Files using **CMD + Shift + F**.
 
 By searching in only `*services.yml` files, and by using **service-name:** with the colon, we will only return one search result.
 
-```
+```yml
 current_user:
-class: Drupal\Core\Session\AccountProxy
+  class: Drupal\Core\Session\AccountProxy
 ```
 
 From here, we know that there is a class `AccountProxy` and that it can be referred to by `Drupal\Core\Session\AccountProxy`. We will use that pattern when we use dependency injection. We can also search for this class in PhpStorm using **Search Everywhere**.

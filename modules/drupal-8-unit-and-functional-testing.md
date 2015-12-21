@@ -38,15 +38,15 @@ We are going to create a new module `test_example`.
 
 #### test_example.info.yml
 
-```
+```yml
 name: Test Example
 type: module
 description: Example showing how to create tests
 core: 8.x
 package: Examples
 dependencies:
-- user
-- options
+  - user
+  - options
 ```
 
 <!-- @section -->
@@ -57,10 +57,10 @@ Services are good examples of things that we can test. Let's make a simple one t
 
 #### test_example.services.yml
 
-```
+```yml
 services:
-test_example.conversions:
-class: Drupal\pants\TestExampleConversions
+  test_example.conversions:
+    class: Drupal\pants\TestExampleConversions
 ```
 
 

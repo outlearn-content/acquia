@@ -89,7 +89,7 @@ Using the configuration API in Drupal 8 allows you to store configurations such 
 
 When providing configuration for a module it is possible to define the default value in a special YAML file located in the `config/install` directory in the module's root directory. The proper naming convention for this file is to prefix it with the name of the module. In working with our example we use `configform_example.settings.yml` . You can use the following sample code so to set a default email address of `examples@examples.com`. Feel free to change it to a address of your choosing:
 
-```
+```yml
 email_address: form@examples.com
 ```
 
@@ -97,12 +97,12 @@ email_address: form@examples.com
 
 If necessary, you can also create more complex settings with nested properties:
 
-```
+```yml
 address:
-line_1: 123 fake st
-city: Boston
-state: MA
-zip: 55555
+  line_1: 123 fake st
+  city: Boston
+  state: MA
+  zip: 55555
 ```
 
 Note the associative array like nested structure which is similar for all YAML files. For example the `configform_example.info.yml` file. Under the key `address`, we have a `key|value` pair `line_1|123 fake st`. In most use cases, access to the nested values is achieved by use a of a dot(.) - and in this example a developer would use: `address.line_1`.

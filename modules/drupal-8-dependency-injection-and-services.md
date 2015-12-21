@@ -23,15 +23,15 @@ When we defined our service above we mapped the service name to the service clas
 
 ```
 services:
-# A service that will let us get a mood.
-di_example.mood_ring:
-class: Drupal\di_example\DIMoodRing
+  # A service that will let us get a mood.
+  di_example.mood_ring:
+    class: Drupal\di_example\DIMoodRing
 
-# A service that will let us talk to users.
-di_example.talk:
-class: Drupal\di_example\DITalk
-# We can inject the current user and mood ring services into this service.
-arguments: ['@current_user', '@di_example.mood_ring']
+  # A service that will let us talk to users.
+  di_example.talk:
+    class: Drupal\di_example\DITalk
+    # We can inject the current user and mood ring services into this service.
+    arguments: ['@current_user', '@di_example.mood_ring']
 ```
 
 Dependency injection for services starts by adding arguments to the `services.yml` file. Each service name is proceeded by `@`. Now that we have told Drupal 8 that we need these two additional services, we can store them the current service.

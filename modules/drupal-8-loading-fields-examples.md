@@ -21,7 +21,7 @@ We will create an example module that loads a node and prints some information a
 
 Create the file `field_example.info.yml`:
 
-```
+```yml
 name: Field Example
 type: module
 description: Example showing how to use fields
@@ -31,13 +31,13 @@ package: Examples
 
 Create the `field_example.routing.yml` file:
 
-```
+```yml
 field_example.simple:
-path: 'examples/field-example/simple'
-defaults:
-_controller: '\Drupal\field_example\Controller\FieldExampleDefaultController::simple'
-requirements:
-_access: 'TRUE'
+  path: 'examples/field-example/simple'
+  defaults:
+    _controller: '\Drupal\field_example\Controller\FieldExampleDefaultController::simple'
+  requirements:
+    _access: 'TRUE'
 ```
 
 Create the controller file - `src/Controller/FieldExampleDefaultController.php`:

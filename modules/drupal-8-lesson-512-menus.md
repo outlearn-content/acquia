@@ -33,19 +33,19 @@ In Drupal 8, we use the [Symfony2 components](https://drupal.org/node/1635626) t
 1.  In the same directory (`page_example`), create the file `page_example.routing.yml`.
 2.  Add the following code to the file:
 
-```
-    page_example_description:
-    path: '/examples/page_example'
-    defaults:
+```yml
+page_example_description:
+  path: '/examples/page_example'
+  defaults:
     _controller: '\Drupal\page_example\Controller\PageExampleController::description'
-    requirements:
-    _access: 'TRUE'
+  requirements:
+      _access: 'TRUE'
 
-    page_example_simple:
-    path: '/examples/page_example/simple'
-    defaults:
+page_example_simple:
+  path: '/examples/page_example/simple'
+  defaults:
     _controller: '\Drupal\page_example\Controller\PageExampleController::simple'
-    requirements:
+  requirements:
     _permission: 'access simple page'
 ```
 
@@ -178,15 +178,15 @@ Now we'll create a menu link that shows up under the **Reports** menu of the Dru
 1.  In the module directory, create the file `page_example.links.menu.yml`
 2.  Add the following code to the file:
 
-```
-  page_example.description:
-    title: 'Page Example'
-    route_name: page_example_description
-    parent: system.admin_reports
-  page_example.simple:
-    title: 'Simple - no arguments'
-    route_name: page_example_simple
-    parent: system.admin_reports
+```yml
+page_example.description:
+  title: 'Page Example'
+  route_name: page_example_description
+  parent: system.admin_reports
+page_example.simple:
+  title: 'Simple - no arguments'
+  route_name: page_example_simple
+  parent: system.admin_reports
 ```
 
 Again we have a YAML structure based on indentation in which we first define the machine name of the menu link (demo) for the module demo (like we did with the routing). Next, we have the link title and description followed by the parent of this link (where it should be placed) and what route it should use.

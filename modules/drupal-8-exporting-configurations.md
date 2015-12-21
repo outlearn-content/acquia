@@ -63,10 +63,10 @@ The directory structure should appear similar to the following:
 
 ```
 fields_example/
-|-- config/
-| |-- install/
-| |-- node.type.external.yml
-|-- external.info.yml
+  |-- config/
+  |   |-- install/
+  |       |-- node.type.external.yml
+  |-- external.info.yml
 ```
 
 It's time to review the progress.
