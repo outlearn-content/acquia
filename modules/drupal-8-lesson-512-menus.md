@@ -39,7 +39,7 @@ page_example_description:
   defaults:
     _controller: '\Drupal\page_example\Controller\PageExampleController::description'
   requirements:
-      _access: 'TRUE'
+    _access: 'TRUE'
 
 page_example_simple:
   path: '/examples/page_example/simple'
