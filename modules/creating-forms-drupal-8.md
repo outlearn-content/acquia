@@ -218,19 +218,19 @@ page_example_form:
     _permission: 'access simple page'
 ```
 
-    Instead of `_controller` under defaults, we use `_form` to specify that the target is a form class. The value is therefore the class name we just created.
+Instead of `_controller` under defaults, we use `_form` to specify that the target is a form class. The value is therefore the class name we just created.
 
-    Rebuild the cache and navigate to `http://mysite.com/examples/page_example/form` to see and use the form.
+Rebuild the cache and navigate to `http://mysite.com/examples/page_example/form` to see and use the form.
 
-    It should look like this:
+It should look like this:
 
-    ![demo-form.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/demo-form.png)
+![demo-form.png](https://raw.githubusercontent.com/outlearn-content/acquia/master/assets/demo-form.png)
 
-    If you are familiar with `drupal_get_form()` and are wondering how to load a form like Drupal 7, the answer is in the global Drupal class. To retrieve a form, you can use its `formBuilder()` method and do something like this:
+If you are familiar with `drupal_get_form()` and are wondering how to load a form like Drupal 7, the answer is in the global Drupal class. To retrieve a form, you can use its `formBuilder()` method and do something like this:
 
-    ```
-    $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
-    ```
+```
+  $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
+```
 
 > **IMPORTANT**
 Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
