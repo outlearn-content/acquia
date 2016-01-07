@@ -61,6 +61,7 @@
       "coverColor" : "#28a9e0",
       "pages" : [
         {"page" : "./pages/welcome-mastering.md"},
+        {"page" : "./pages/mastering-lesson8.md"},
         {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
         {"module" : "drupal-8-services-and-controllers"},
         {"module" : "drupal-8-dependency-injection"},
