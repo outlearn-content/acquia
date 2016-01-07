@@ -1,4 +1,4 @@
-# Testing in Drupal 8
+# Lesson 10: Testing in Drupal 8
 
 Testing in Drupal 8 has been broken into two primary types: unit testing and functional testing. Testing is used in a variety of ways. Some tests are written before development begins and helps developers build towards desired functionality. Other tests are written to help identify regression issues. The goal of this lesson is to introduce these two types of testing, but not to explain when to write these tests.
 
