@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Controllers
 
 Controllers can easily use dependency injection because they provide the `create()` method that receives the service container. We have already created our route, so let's create the controller file `src/Controller/DIController.php`.
