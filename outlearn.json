@@ -35,6 +35,7 @@
       "coverImage" : "./assets/abstract-22122_1920.jpg",
       "coverColor" : "#28a9e0",
       "pages" : [
+        {"page" : "./pages/welcome-entities-fields.md"},
         {"module" : "drupal-8-entities-content-entities-and-configuration-entities"},
         {"module" : "drupal-8-entities-lab"},
         {"module" : "drupal-8-fields-entities"},
@@ -55,6 +56,7 @@
       "coverImage" : "./assets/abstract-22122_1920.jpg",
       "coverColor" : "#28a9e0",
       "pages" : [
+        {"page" : "./pages/welcome-mastering.md"},
         {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
         {"module" : "drupal-8-services-and-controllers"},
         {"module" : "drupal-8-dependency-injection"},
