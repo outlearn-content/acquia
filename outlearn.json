@@ -16,6 +16,7 @@
         {"module" : "examples-module-symfony-controllers-and-menu"},
         {"module" : "drupal-8-lesson-512-menus"},
         {"module" : "drupal-8-lesson-513-labs-and-other-information"},
+        {"page" : "./pages/basics-lesson2.md"},
         {"module" : "drupal-8-blocks-configuration-and-forms"},
         {"module" : "creating-forms-drupal-8"},
         {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"},
