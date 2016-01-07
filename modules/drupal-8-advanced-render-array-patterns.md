@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## HTML attributes
 
 You can set HTML attributes (such as IDs and classes) as part of the render array. These will then be passed to the Twig template which allows a themer to ad to or override the default. To do this, add the `#attributes` variable to the render array. The keys of this array are the attributes and the values are their values.
