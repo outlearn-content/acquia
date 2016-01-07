@@ -11,10 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
 ## Example module
 
 We will create an example module that loads a node and prints some information about it. First, create at least one node with the body field filled in. Then, we will set up the basics of our module. This module creates a single route and a controller that loads a single node.
