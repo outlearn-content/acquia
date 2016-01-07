@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Exporting the Configuration
 
 There are three methods that you can use to expose the configuration files:
