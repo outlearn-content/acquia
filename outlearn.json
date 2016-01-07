@@ -7,7 +7,7 @@
       "title" : "Building modules with Drupal 8 - Part 1: Basics",
       "description" : "Basics: Symfony, Controllers, Menu, Blocks, Configuration, Forms, and their management",
       "privacy" : "public",
-      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverImage" : "./assets/abstract-22122_1920.jpg",
       "coverColor" : "#28a9e0",
       "pages" : [
         {"page" : "./pages/welcome-basics.md"},
@@ -29,7 +29,7 @@
       "title" : "Building modules with Drupal 8 - Part 2: Entities and Fields",
       "description" : "Entities and Fields",
       "privacy" : "public",
-      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverImage" : "./assets/abstract-22122_1920.jpg",
       "coverColor" : "#28a9e0",
       "pages" : [
         {"module" : "drupal-8-entities-content-entities-and-configuration-entities"},
@@ -49,7 +49,7 @@
       "title" : "Building modules with Drupal 8 - Part 3: Mastering",
       "description" : "Mastering: Services, Dependency Injection, Containers, Creating and Theming elements, Front-end Libraries, Testing, Review",
       "privacy" : "public",
-      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/assets/master/space.jpg",
+      "coverImage" : "./assets/abstract-22122_1920.jpg",
       "coverColor" : "#28a9e0",
       "pages" : [
         {"module" : "drupal-8-services-dependency-injection-and-service-containers"},
@@ -118,5 +118,10 @@
   ],
 
   "assets" : [
+    {
+      "name" : "frozen-drop-inline",
+      "contentType" : "image/jpeg",
+      "location" : "assets/abstract-22122_1920.jpg"
+    }
   ]
 }
