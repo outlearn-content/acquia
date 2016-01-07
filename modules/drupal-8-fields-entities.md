@@ -68,7 +68,7 @@ Your current configuration has changed. Changes to these configuration items wil
 * user.role.administrator
 ```
 
-Copy this list of file names for your new field to a safe place. You will use the list later in [Lesson 5.5.2 - Exporting configurations](https://docs.acquia.com/articles/drupal-8-exporting-configurations).
+Copy this list of file names for your new field to a safe place. You will use the list later in [Lesson 5.2 - Exporting configurations](https://www.outlearn.com/module/pronovix/drupal-8-exporting-configurations).
 
 You may see additional files listed here, particularly if you are re-using an existing Drupal 8 install. It is safe to ignore them. In addition, these listed files can be discarded as they are not needed. They are created during the initial Drupal 8 install:
 

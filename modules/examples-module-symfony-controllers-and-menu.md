@@ -49,7 +49,7 @@ Drupal 8 does not use the Model-View-Controller software architectural pattern. 
 
 ### Why use Symfony?
 
-One of the most helpful tools introduced with Symfony is the ability to automatically load code for use based upon its location in the code base. Autoloading is the capability of loading pieces of code from a mass storage automatically when needed. As a result, a Drupal developer can include reusable code with a simple [`use`](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#use) line rather than creating a full include file. Autoloading is added with the Symfony ClassLoader component.
+One of the most helpful tools introduced with Symfony is the ability to automatically load code for use based upon its location in the code base. Autoloading is the capability of loading pieces of code from a mass storage automatically when needed. As a result, a Drupal developer can include reusable code with a simple [`use`](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) line rather than creating a full include file. Autoloading is added with the Symfony ClassLoader component.
 
 Drupal has always been a PHP application, and Symfony is a PHP framework that makes several helpful PHP libraries available. Building on the Symfony framework in Drupal core has both benefits and risks.
 
@@ -84,12 +84,12 @@ With that basic information as a starting point, now we can create a simple modu
 
 YAML is a human friendly data serialization standard which can be implemented by any programming languages. A helpful YAML tutorial can be found [here](http://ess.khhq.net/wiki/YAML_Tutorial), and you can read more about the details of it [here](http://www.yaml.org/).
 
-1.  Create the [directories](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#directories).
-2.  Create the [`page_example.info.yml`](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#info) file.
-3.  Create the [`page_example.routing.yml`](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#routing) file.
-4.  Create the [`PageExampleController.php`](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#controller) file.
-5.  Create the [`page_example.links.menu.yml`](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#links) file.
-6.  [Rebuild the caches](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#cc).
+1.  Create the [directories](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu).
+2.  Create the [`page_example.info.yml`](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) file.
+3.  Create the [`page_example.routing.yml`](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) file.
+4.  Create the [`PageExampleController.php`](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) file.
+5.  Create the [`page_example.links.menu.yml`](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) file.
+6.  [Rebuild the caches](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu).
 7.  Test.
 
 ### Setting up directories

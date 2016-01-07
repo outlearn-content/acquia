@@ -24,7 +24,7 @@ Review the following items with which you should be familiar before you proceed 
 *   Basic understanding of programming in PHP
 *   Basic familiarity with OOP terminology and their meaning
 *   Basic experience in using PHPStorm
-*   Read and confirm your comprehension of both the [code organization](https://docs.acquia.com/articles/building-drupal-8-modules#code) and the [important terms](https://docs.acquia.com/articles/building-drupal-8-modules#terms) sections on this page
+*   Read and confirm your comprehension of both the [code organization](https://www.outlearn.com/module/pronovix/acquia-building-modules-intro) and the [important terms](https://www.outlearn.com/module/pronovix/acquia-building-modules-intro) sections on this page
 
 <!-- @section -->
 

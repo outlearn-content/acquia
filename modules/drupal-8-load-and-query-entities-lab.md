@@ -25,7 +25,7 @@ We’ve also seen how to load entities based on the IDs resulting from these que
 
     Alternately, add the field `field_tags` to the content type **Basic Page** by editing the content type and using the **Re-use existing field** to reference **Tags**. Use this in place of the five **articles**.
 
-2.  Recursively copy the `page_example` module from [Lesson 1](https://docs.acquia.com/articles/articles/examples-module-symfony-controllers-and-menu) to a new module called `query_example`.
+2.  Recursively copy the `page_example` module from [Lesson 1](https://www.outlearn.com/module/pronovix/examples-module-symfony-controllers-and-menu) to a new module called `query_example`.
 3.  Rename appropriate files and terms, methods, and classes inside `query_example` as appropriate.
 4.  Modify the `PageExampleController` class:
     1.  Create a new method called `simpleQuery()` to return the list of NIDs.

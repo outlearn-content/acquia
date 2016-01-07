@@ -56,7 +56,7 @@ class ExampleEmptyBlock extends BlockBase {
 
 #### Classes and annotations
 
-All class files must begin with defining the namespace for the class. After creating the [namespace](https://docs.acquia.com/articles/php.net/manual/en/language.namespaces.php) for the class, we extend the Drupal core `BlockBase` class to create the `ExampleEmptyBlock` class. With that, we can use Drupal PHP Annotations, introduced with Drupal 8.
+All class files must begin with defining the namespace for the class. After creating the [namespace](https://php.net/manual/en/language.namespaces.php) for the class, we extend the Drupal core `BlockBase` class to create the `ExampleEmptyBlock` class. With that, we can use Drupal PHP Annotations, introduced with Drupal 8.
 
 Generic PHP Annotations are self contained comment text which allows the auto-discovery of metadata and registration information regarding a class file. The example above has annotations specifically for **Example: empty block**, located in 2nd set of comment text. By utilizing annotations we notify Drupal that we want to register a new block type (`@Block`) with the id of `example_empty` and the **admin_label** of `Example: empty block`, which is passed through the translation system prior to being used.
 

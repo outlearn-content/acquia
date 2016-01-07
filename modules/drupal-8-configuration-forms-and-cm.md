@@ -38,7 +38,7 @@ CM replaces several functions used by earlier versions of Drupal. Many of these 
 
 ## Configuration forms
 
-When we defined [PageExampleForm](https://docs.acquia.com/articles/creating-forms-drupal-8#form-create) we extended the `FormBase` class; a simple implementation of the `FormInterface` which provides an interface for a form.
+When we defined [PageExampleForm](https://www.outlearn.com/module/pronovix/creating-forms-drupal-8) we extended the `FormBase` class; a simple implementation of the `FormInterface` which provides an interface for a form.
 
 Drupal 8 provides an alternate core class, `ConfigFormBase`, which provides additional functionality at the cost of increased complexity in the method. The primary benefit of this class is improved interaction with the configuration system.
 
