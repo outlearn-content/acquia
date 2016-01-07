@@ -1,4 +1,4 @@
-# Onto the next most common components: blocks
+# The Next Most Common Components: Blocks
 
 We have addressed the initial pieces necessary to build a module so we will move onto the next most common components in Drupal 8: _blocks_ and _forms_.
 
