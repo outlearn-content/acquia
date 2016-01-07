@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Add a Twig template
 
 Now that we have the basic theme elements defined, we can create a template for [Twig](http://twig.sensiolabs.org/). Twig is the [default theme system for Drupal 8](https://www.drupal.org/theme-guide/8/twig).
