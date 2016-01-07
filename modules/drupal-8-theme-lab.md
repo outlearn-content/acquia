@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and Summary
 
 Drupal has changed a lot over the years and in many of those cases, it has supported both old and new systems. Looking at the options at a high level is extremely confusing. There are great improvements to theming in Drupal 8, but it hasn't received the complete overhaul that much of the other systems has. Because of that, it's important to focus on the new and consistent patterns rather than all of the old alternatives.
