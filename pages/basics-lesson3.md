@@ -1,4 +1,4 @@
-# Lesson 3: Configuration Information and Functions
+#Lesson 3: Configuration Information and Functions
 
 This lesson introduces both a special type of form called a _configuration form_ and Configuration Management (CM), which describes the effort made to gather the multiple sources of configuration information and functions in Drupal 7 into a single system in Drupal 8.
 
