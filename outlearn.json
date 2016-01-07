@@ -20,6 +20,7 @@
         {"module" : "drupal-8-blocks-configuration-and-forms"},
         {"module" : "creating-forms-drupal-8"},
         {"module" : "drupal-8-blocks-configuration-and-forms-lab-and-other-information"},
+        {"page" : "./pages/basics-lesson2.md"},
         {"module" : "drupal-8-configuration-forms-and-cm"},
         {"module" : "drupal-8-configuration-and-config-object"},
         {"module" : "drupal-8-configuration-lab-and-other-information"}
