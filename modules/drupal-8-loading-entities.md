@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Loading entities
 
 The `execute()` method on the query object we’ve been working with returns an array of entity IDs. To use them, we now have to load those entity objects and work with them. Drupal 7 used the [`entity_load()`](https://api.drupal.org/api/function/entity_load/7) function would return an array of objects based on IDs passed to it. In Drupal 8, this helper function is maintained and used much in the same way, except only for one entity at a time. An additional function was also created to load multiple entities: [entity_load_multiple()](https://api.drupal.org/api/drupal/core%21includes%21entity.inc/function/entity_load_multiple/8).
