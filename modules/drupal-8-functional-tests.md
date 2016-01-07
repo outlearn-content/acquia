@@ -108,45 +108,54 @@ This pattern is VERY similar to unit tests, but uses `Functional` in the path an
 [Download this file](https://gist.github.com/acquialibrary/592ef8fdc41a3ba21ee5/archive/520305274709233d8cc136cf971666500272022f.zip).
 
 ```php
- <?php
- /**
+<?php
+ 
+/**
  * @file
  *
  * Contains \Drupal\Tests\test_example\Functional\TestExampleUserTest.
  */
- namespace Drupal\Tests\test_example\Functional;
- use Drupal\simpletest\BrowserTestBase;
- /**
+ 
+namespace Drupal\Tests\test_example\Functional;
+ 
+use Drupal\simpletest\BrowserTestBase;
+ 
+/**
  * Check if our user field works.
  *
  * @group test_example
  * @runTestsInSeparateProcesses
  * @preserveGlobalState disabled
  */
- class TestExampleUserTest extends BrowserTestBase {
- /**
- * @var \Drupal\user\Entity\User.
- */
- protected $user;
- /**
- * Enabled modules
- */
- public static $modules = ['test_example'];
- /**
- * {@inheritdoc}
- */
- function setUp() {
- parent::setUp();
- $this->user = $this->drupalCreateUser();
- }
- /**
- * Test that the user has a test_status field.
- */
- public function testUserHasTestStatusField() {
- $this->assertTrue(in_array('test_status', array_keys($this->user->getFieldDefinitions())));
- }
-
- }
+class TestExampleUserTest extends BrowserTestBase {
+ 
+  /**
+   * @var \Drupal\user\Entity\User.
+   */
+  protected $user;
+ 
+  /**
+   * Enabled modules
+   */
+  public static $modules = ['test_example'];
+ 
+  /**
+   * {@inheritdoc}
+   */
+  function setUp() {
+    parent::setUp();
+ 
+    $this->user = $this->drupalCreateUser();
+  }
+ 
+  /**
+   * Test that the user has a test_status field.
+   */
+  public function testUserHasTestStatusField() {
+    $this->assertTrue(in_array('test_status', array_keys($this->user->getFieldDefinitions())));
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/592ef8fdc41a3ba21ee5/raw/520305274709233d8cc136cf971666500272022f/TestExampleUserTest.php) [TestExampleUserTest.php](https://gist.github.com/acquialibrary/592ef8fdc41a3ba21ee5#file-testexampleusertest-php) hosted with ❤ by [GitHub](https://github.com)
@@ -207,52 +216,52 @@ An example SimpleTest, `src/Tests/TestExampleUserTest.php`:
 [Download this file](https://gist.github.com/acquialibrary/dadee0ebc9f7aa45d59c/archive/e10124844530af6aea145c3beb6d72ea7f6e9ce5.zip).
 
 ```php
-
- <?php
- /**
+<?php
+ 
+/**
  * @file
  *
  * Contains \Drupal\test_example\Tests\TestExampleUserTest.
  */
-
- namespace Drupal\test_example\Tests;
-
- use Drupal\simpletest\WebTestBase;
-
- /**
+ 
+namespace Drupal\test_example\Tests;
+ 
+use Drupal\simpletest\WebTestBase;
+ 
+/**
  * Check if our user field works.
  *
  * @group test_example
  */
- class TestExampleUserTest extends WebTestBase {
-
- /**
- * @var \Drupal\user\Entity\User.
- */
- protected $user;
-
- /**
- * Enabled modules
- */
- public static $modules = ['test_example'];
-
- /**
- * {@inheritdoc}
- */
- function setUp() {
- parent::setUp();
-
- $this->user = $this->drupalCreateUser();
- }
-
- /**
- * Test that the user has a test_status field.
- */
- public function testUserHasTestStatusField() {
- $this->assertTrue(in_array('test_status', array_keys($this->user->getFieldDefinitions())));
- }
-
- }
+class TestExampleUserTest extends WebTestBase {
+ 
+  /**
+   * @var \Drupal\user\Entity\User.
+   */
+  protected $user;
+ 
+  /**
+   * Enabled modules
+   */
+  public static $modules = ['test_example'];
+ 
+  /**
+   * {@inheritdoc}
+   */
+  function setUp() {
+    parent::setUp();
+ 
+    $this->user = $this->drupalCreateUser();
+  }
+ 
+  /**
+   * Test that the user has a test_status field.
+   */
+  public function testUserHasTestStatusField() {
+    $this->assertTrue(in_array('test_status', array_keys($this->user->getFieldDefinitions())));
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/dadee0ebc9f7aa45d59c/raw/e10124844530af6aea145c3beb6d72ea7f6e9ce5/TestExampleUserTest.php) [TestExampleUserTest.php](https://gist.github.com/acquialibrary/dadee0ebc9f7aa45d59c#file-testexampleusertest-php) hosted with ❤ by [GitHub](https://github.com)

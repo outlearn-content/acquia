@@ -41,7 +41,7 @@ You will often see services referred to by their name, but finding the service m
 
 For example, you have `arguments: ['@current_user']`, which is defined as:
 
-```
+```php
 $current_user = \Drupal::service('current_user');
 ```
 
@@ -64,11 +64,11 @@ Press **Shift** twice and then search for AccountProxy. One of the results will 
 
 All classes should have a comment at the top that also shows how it can be referenced:
 
-```
+```php
 /**
-* @file
-* Contains \Drupal\Core\Session\AccountProxy.
-*/
+ * @file
+ * Contains \Drupal\Core\Session\AccountProxy.
+ */
 ```
 
 <!-- @section -->
@@ -77,7 +77,7 @@ All classes should have a comment at the top that also shows how it can be refer
 
 If we know the name of a class in PhpStorm, we can easily navigate to that class by holding **CMD** and clicking on the class name. In this example, we can navigate to the AccountInterface class by clicking on it.
 
-```
+```php
 public function setAccount(AccountInterface $account) {}
 ```
 

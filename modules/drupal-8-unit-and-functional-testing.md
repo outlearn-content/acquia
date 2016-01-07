@@ -69,44 +69,45 @@ And `src/TestExampleConversions.php`:
 [Download this file](https://gist.github.com/acquialibrary/741fbddc865fc8ea335f/archive/d0e967898d950cdd8e5c202e6a20f3efb75a8bc6.zip).
 
 ```php
- <?php
- /**
+<?php
+ 
+/**
  * @file
  * Contains \Drupal\test_example\TestExampleConversions.
  */
-
- namespace Drupal\test_example;
-
- /**
+ 
+namespace Drupal\test_example;
+ 
+/**
  * Provide functions for converting measurements.
  *
  * @package Drupal\test_example
  */
- class TestExampleConversions {
-
- /**
- * Convert Celsius to Fahrenheit
- *
- * @param $temp
- *
- * @return int
- */
- public function celsiusToFahrenheit($temp) {
- return ($temp * (9/5)) + 32;
- }
-
- /**
- * Convert centimeter to inches.
- *
- * @param $length
- *
- * @return int
- */
- public function centimeterToInch($length) {
- return $length / 2.54;
- }
-
- }
+class TestExampleConversions {
+ 
+  /**
+   * Convert Celsius to Fahrenheit
+   *
+   * @param $temp
+   *
+   * @return int
+   */
+  public function celsiusToFahrenheit($temp) {
+    return ($temp * (9/5)) + 32;
+  }
+ 
+  /**
+   * Convert centimeter to inches.
+   *
+   * @param $length
+   *
+   * @return int
+   */
+  public function centimeterToInch($length) {
+    return $length / 2.54;
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/741fbddc865fc8ea335f/raw/d0e967898d950cdd8e5c202e6a20f3efb75a8bc6/TestExampleConversions.php) [TestExampleConversions.php](https://gist.github.com/acquialibrary/741fbddc865fc8ea335f#file-testexampleconversions-php) hosted with ❤ by [GitHub](https://github.com)

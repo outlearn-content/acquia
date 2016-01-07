@@ -76,10 +76,10 @@ This new class requires an additional function `getEditableConfigNames`. We shou
 
 ```
 /**
-* {@inheritdoc}.
-*/
+ * {@inheritdoc}.
+ */
 public function getEditableConfigNames() {
-return ['configform_example.settings'];
+  return ['configform_example.settings'];
 }
 ```
 
@@ -114,16 +114,16 @@ This YAML file gets imported only when the module is installed. This means that 
 
 This is how the `buildForm()` method should now appear:
 
-```
+```php
 public function buildForm(array $form, FormStateInterface $form_state) {
-$form = parent::buildForm($form, $form_state);
-$config = $this->config('configform_example.settings');
-$form['email'] = [
-'#type' => 'email',
-'#title' => $this->t('Your .com email address.'),
-'#default_value' => $config->get('email_address')
-];
-return $form;
+  $form = parent::buildForm($form, $form_state);
+  $config = $this->config('configform_example.settings');
+  $form['email'] = [
+    '#type' => 'email',
+    '#title' => $this->t('Your .com email address.'),
+    '#default_value' => $config->get('email_address')
+  ];
+  return $form;
 }
 ```
 

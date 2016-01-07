@@ -34,14 +34,14 @@
     A render array must have either a setting for render element or for variables. The main difference is the way the template variables will look. For render element, all variables are under a single element, and for variables they are all at the top level.
 
 ```
-    {# Render Element #}
-    {{ element }}
-    {{ element.field_one }}
-    {{ element.field_two }}
+{# Render Element #}
+{{ element }}
+{{ element.field_one }}
+{{ element.field_two }}
 
-    {# Variables #}
-    {{ field_one }}
-    {{ field_two }}
+{# Variables #}
+{{ field_one }}
+{{ field_two }}
 ```
 
 While in theory, this makes sense, you might have a render array that starts as a group of other elements or one that starts as a group of variables. In reality, most elements are a mix and the way people have worked around these differences is very inconsistent.
@@ -49,11 +49,11 @@ While in theory, this makes sense, you might have a render array that starts as 
 In the pattern we have used in this lesson, you end up with:
 
 ```
-    {# Render Element #}
-    {{ element }}
-    {{ element.field_one }}
-    {{ element.field_two }}
-    {{ element['#variable'] }}
+{# Render Element #}
+{{ element }}
+{{ element.field_one }}
+{{ element.field_two }}
+{{ element['#variable'] }}
 ```
 
 It's not ideal, but it seems simple enough. You can print the entire element, a field, or a variable. This also keeps the pattern of variables all starting with `#`.

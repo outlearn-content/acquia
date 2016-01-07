@@ -30,8 +30,8 @@ First, an example template file, `templates/my-element.html.twig`. You can print
 [Download this file](https://gist.github.com/acquialibrary/3122d2205cdcd8ca8512/archive/54eab43dd109059e58b93a8d090716bec4cc87db.zip).
 
 ```
- {#
- /**
+{#
+/**
  * @file
  * Default theme implementation to my_element.
  *
@@ -44,28 +44,27 @@ First, an example template file, `templates/my-element.html.twig`. You can print
  *
  * @ingroup themeable
  */
- #}
-
- <div class="myElement">
- <div class="randomNumber">Random Number: {{ element['#random_number'] }}</div>
- <p>{{ element.description }}</p>
- {{ element.link }}
- </div>
-
- {# Debug output #}
- <div>
- <h3>We print the element</h3>
- {{ element }}
- <h3>Link</h3>
- {{ element.link }}
- <h3>Description</h3>
- {{ element.description }}
- <h3>#pre_render addition</h3>
- {{ element.pre_render_addition }}
- <h3>Random number (not printed when we printed the whole element</h3>
- {{ element['#random_number'] }}
-
- </div>
+#}
+ 
+<div class="myElement">
+  <div class="randomNumber">Random Number: {{ element['#random_number'] }}</div>
+  <p>{{ element.description }}</p>
+  {{ element.link }}
+</div>
+ 
+{# Debug output #}
+<div>
+  <h3>We print the element</h3>
+  {{ element }}
+  <h3>Link</h3>
+  {{ element.link }}
+  <h3>Description</h3>
+  {{ element.description }}
+  <h3>#pre_render addition</h3>
+  {{ element.pre_render_addition }}
+  <h3>Random number (not printed when we printed the whole element</h3>
+  {{ element['#random_number'] }}
+</div>
 ```
 [view raw](https://gist.github.com/acquialibrary/3122d2205cdcd8ca8512/raw/54eab43dd109059e58b93a8d090716bec4cc87db/my-element.html.twig) [my-element.html.twig](https://gist.github.com/acquialibrary/3122d2205cdcd8ca8512#file-my-element-html-twig) hosted with ❤ by [GitHub](https://github.com)
 

@@ -31,10 +31,11 @@ In this method we first retrieve the Config object for our configuration (like w
 
 ```
 public function submitForm(array &$form, FormStateInterface $form_state) {
-$config = $this->config('configform_example.settings');
-$config->set('email_address', $form_state->getValue('email'));
-$config->save();
-return parent::submitForm($form, $form_state);
+  $config = $this->config('configform_example.settings');
+  $config->set('email_address', $form_state->getValue('email'));
+  $config->save();
+  return parent::submitForm($form, $form_state);
+}
 ```
 
 ### Testing the object
@@ -48,59 +49,68 @@ Create the `ConfigFormExampleConfigForm.php` class file in the `src/Form` folder
 [Download this file](https://gist.github.com/acquialibrary/c7e11dcaae9278ea9c0a/archive/14be57d56955556a0e38420a3dbacb377870deac.zip).
 
 ```php
- <?php
- /**
+<?php
+   
+/**
  * @file
  * Contains \Drupal\configform_example\Form\ConfigFormExampleConfigForm.
  */
- namespace Drupal\configform_example\Form;
- use Drupal\Core\Form\ConfigFormBase;
- use Drupal\Core\Form\FormStateInterface;
- class ConfigFormExampleConfigForm extends ConfigFormBase {
- /**
- * {@inheritdoc}.
- */
- public function getFormId() {
- return 'configform_example_form';
- }
- /**
- * {@inheritdoc}.
- */
- public function buildForm(array $form, FormStateInterface $form_state) {
- $form = parent::buildForm($form, $form_state);
- $config = $this->config('configform_example.settings');
- $form['email'] = [
- '#type' => 'email',
- '#title' => $this->t('Your .com email address.'),
- '#default_value' => $config->get('email_address'),
- ];
- return $form;
- }
- /**
- * {@inheritdoc}
- */
- public function validateForm(array &$form, FormStateInterface $form_state) {
- if (strpos($form_state->getValue('email'), '.com') === FALSE ) {
- $form_state->setErrorByName('email', $this->t('This is not a .com email address.'));
- }
- }
- /**
- * {@inheritdoc}
- */
- public function submitForm(array &$form, FormStateInterface $form_state) {
- $config = $this->config('configform_example.settings');
- $config->set('email_address', $form_state->getValue('email'));
- $config->save();
- return parent::submitForm($form, $form_state);
- }
- /**
- * {@inheritdoc}
- */
- protected function getEditableConfigNames() {
- return ['configform_example.settings'];
- }
-
- }
+   
+namespace Drupal\configform_example\Form;
+   
+use Drupal\Core\Form\ConfigFormBase;
+use Drupal\Core\Form\FormStateInterface;
+   
+class ConfigFormExampleConfigForm extends ConfigFormBase {
+     
+  /**
+   * {@inheritdoc}.
+   */
+  public function getFormId() {
+    return 'configform_example_form';
+  }
+     
+  /**
+   * {@inheritdoc}.
+   */
+  public function buildForm(array $form, FormStateInterface $form_state) {
+  $form = parent::buildForm($form, $form_state);
+  $config = $this->config('configform_example.settings');
+  $form['email'] = [
+    '#type' => 'email',
+    '#title' => $this->t('Your .com email address.'),
+    '#default_value' => $config->get('email_address'),
+  ];
+  return $form;
+  }
+     
+  /**
+   * {@inheritdoc}
+   */
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    if (strpos($form_state->getValue('email'), '.com') === FALSE ) {
+      $form_state->setErrorByName('email', $this->t('This is not a .com email address.'));
+    }
+  }
+     
+  /**
+   * {@inheritdoc}
+   */
+  public function submitForm(array &$form, FormStateInterface $form_state) {
+    $config = $this->config('configform_example.settings');
+    $config->set('email_address', $form_state->getValue('email'));
+    $config->save();
+    return parent::submitForm($form, $form_state);
+  }
+ 
+  /**
+   * {@inheritdoc}
+   */
+  protected function getEditableConfigNames() {
+    return ['configform_example.settings'];
+  }
+     
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/c7e11dcaae9278ea9c0a/raw/14be57d56955556a0e38420a3dbacb377870deac/ConfigFormExampleConfigForm.php) [ConfigFormExampleConfigForm.php](https://gist.github.com/acquialibrary/c7e11dcaae9278ea9c0a#file-configformexampleconfigform-php) hosted with ❤ by [GitHub](https://github.com)

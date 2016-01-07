@@ -29,49 +29,49 @@ There are three ways to load entities:
 
     [Download this file](https://gist.github.com/acquialibrary/7bdfb45d8af6454d4128/archive/b56b15d21da7843e0b18cbdf92b3b15dae771feb.zip).
 
-```
- protected $entityManager;
-
- /**
+```php
+protected $entityManager;
+ 
+/**
  * {@inheritdoc}
  */
- public function __construct(EntityManagerInterface $entityManager) {
- $this->entityManager = $entityManager;
- }
-
- /**
-* {@inheritdoc}
+public function __construct(EntityManagerInterface $entityManager) {
+  $this->entityManager = $entityManager;
+}
+  
+/**
+ * {@inheritdoc}
  */
- public static function create(ContainerInterface $container) {
- return new static(
- $container->get('entity.manager')
- );
- }
-
- /**
+public static function create(ContainerInterface $container) {
+  return new static(
+    $container->get('entity.manager')
+  );
+}
+  
+/**
  * Return a list of nodes that are published.
  */
 protected function example() {
- // We get the node storage object.
- $node_storage = $this->entityManager->getStorage('node');
-
- // We use the load function to load a single node object.
- $nid = 1;
- $node = $node_storage->load($nid);
-
- // We load a revision
- $revision_id = 1;
- $node = $node_storage->loadRevision($revision_id);
-
- // We use the loadMultiple function to load an array of node objects keyed by node ID.
- $nids = [1,2,3,4];
- $nodes = $node_storage->loadMultiple($nids);
-
- // We will discuss this in future lessons, but you can get the value of simple fields using ->get('field_name')->value.
- return [
- '#markup' => $node->get('title')->value,
- ];
- }
+  // We get the node storage object.
+  $node_storage = $this->entityManager->getStorage('node');
+   
+  // We use the load function to load a single node object.
+  $nid = 1;
+  $node = $node_storage->load($nid);
+ 
+  // We load a revision
+  $revision_id = 1;
+  $node = $node_storage->loadRevision($revision_id);
+ 
+  // We use the loadMultiple function to load an array of node objects keyed by node ID.
+  $nids = [1,2,3,4];
+  $nodes = $node_storage->loadMultiple($nids);
+ 
+  // We will discuss this in future lessons, but you can get the value of simple fields using ->get('field_name')->value.
+  return [
+    '#markup' => $node->get('title')->value,
+  ];
+}
 ```
 [view raw](https://gist.github.com/acquialibrary/7bdfb45d8af6454d4128/raw/b56b15d21da7843e0b18cbdf92b3b15dae771feb/entitymanager_class.php) [entitymanager_class.php](https://gist.github.com/acquialibrary/7bdfb45d8af6454d4128#file-entitymanager_class-php) hosted with ❤ by [GitHub](https://github.com)
 
@@ -79,7 +79,7 @@ protected function example() {
 
     You can also use the static method when the container is not available.
 
-```
+```php
 // Get a node storage object.
 $node_storage = \Drupal::entityManager()->getStorage('node');
 
@@ -93,7 +93,7 @@ $node_storage->loadMultiple($nids);
 
     The global method is most similar to Drupal 7\. In this example, we call global functions that load the nodes.
 
-```
+```php
 // Load a single entity.
 $node = entity_load('node', $nid);
 

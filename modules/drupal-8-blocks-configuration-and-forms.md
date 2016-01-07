@@ -47,33 +47,36 @@ In the Example project you will find the `block_example` module which contains t
 ## Download this file.
 
 ```php
- <?php
- /**
+<?php
+/**
  * @file
  * Contains \Drupal\block_example\Plugin\Block\ExampleEmptyBlock.
  */
- namespace Drupal\block_example\Plugin\Block;
- use Drupal\Core\Block\BlockBase;
- /**
+
+namespace Drupal\block_example\Plugin\Block;
+use Drupal\Core\Block\BlockBase;
+
+/**
  * Provides a 'Example: empty block' block.
  *
  * @Block(
- * id="example_empty",
- * admin_label = @Translation("Example: empty block")
+ *   id="example_empty",
+ *   admin_label = @Translation("Example: empty block")
  * )
  */
- class ExampleEmptyBlock extends BlockBase {
- /**
- * {@inheritdoc}
- */
- public function build() {
- return [
- '#type' => 'markup',
- '#markup' => '',
- ];
- }
+class ExampleEmptyBlock extends BlockBase {
 
- }
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    return [
+      '#type' => 'markup',
+      '#markup' => '',
+    ];
+  }
+
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/196dca7dd1edbbf32bbe/raw/0e457a5e87a54e7899640b424886070e8a8e26d5/ExampleEmptyBlock.php) [ExampleEmptyBlock.php](https://gist.github.com/acquialibrary/196dca7dd1edbbf32bbe#file-exampleemptyblock-php) hosted with ❤ by [GitHub](https://github.com)

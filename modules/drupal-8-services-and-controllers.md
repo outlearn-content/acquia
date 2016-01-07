@@ -24,38 +24,38 @@ We have already created controllers. We will start with a controller that doesn'
 [Download this file](https://gist.github.com/acquialibrary/d6037e4eaaa12db3cb10/archive/69021eb586f8f1032315b6e61e8fbe28f7407cef.zip).
 
 ```php
- <?php
-
- /**
+<?php
+ 
+/**
  * @file
  * Contains \Drupal\service_example\ServiceExampleController.
  */
-
- namespace Drupal\service_example\Controller;
-
- use Drupal\Core\Controller\ControllerBase;
-
- class ServiceExampleController extends ControllerBase {
- /**
- * {@inheritdoc}
- */
- public function __construct() {
- }
-
- /**
- * {@inheritdoc}
- */
- public static function create() {
- return new static(
- );
- }
-
- public function simple_example() {
- return [
- '#markup' => 'Hello World'
- ];
- }
- }
+ 
+namespace Drupal\service_example\Controller;
+ 
+use Drupal\Core\Controller\ControllerBase;
+ 
+class ServiceExampleController extends ControllerBase {
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct() {
+  }
+ 
+  /**
+   * {@inheritdoc}
+   */
+  public static function create() {
+    return new static(
+    );
+  }
+ 
+  public function simple_example() {
+    return [
+      '#markup' => 'Hello World'
+    ];
+  }
+}
 ```
 [view raw](https://gist.github.com/acquialibrary/d6037e4eaaa12db3cb10/raw/69021eb586f8f1032315b6e61e8fbe28f7407cef/ServiceExampleController.php) [ServiceExampleController.php](https://gist.github.com/acquialibrary/d6037e4eaaa12db3cb10#file-serviceexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)
 
@@ -71,34 +71,34 @@ If this sounds complex, the basic method to add a service is:
 2.  Pass the service to the `__construct()` function.
 3.  Store the service as a class variable.
 
-```
+```php
 public static function create(ContainerInterface $container) {
-return new static(
-$container->get('service_example.example_service')
-);
+  return new static(
+    $container->get('service_example.example_service')
+  );
 }
 ```
 
 As we mentioned, the create function takes a `ContainerInterface` and which we `$container`. This has an important function `get()`, which we use to get service objects. `return new static()` essentially calls the `__construct()` function. Right now we only have one argument, but you can pass multiple services by using a comma separated list of arguments.
 
-```
+```php
 public function __construct(ServiceExampleService $serviceExampleService) {
-$this->serviceExampleService = $serviceExampleService;
+  $this->serviceExampleService = $serviceExampleService;
 }
 ```
 
 This function stores the passed in service as a variable. As with the `ContainerInterface` type, it's useful to state the type of argument to help editors like PhpStorm know what functions and properties are available.
 
-```
+```php
 /**
-* @var \Drupal\service_example\ServiceExampleService
-*/
+ * @var \Drupal\service_example\ServiceExampleService
+ */
 protected $serviceExampleService;
 ```
 
 Now we create a new variable. Now we're using additional class types, we add those to the top of the file with the use statements.
 
-```
+```php
 use Drupal\service_example\ServiceExampleService;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -106,11 +106,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 Since we have access to the service as `$this->serviceExampleService`, we can use its function `getServiceExampleValue()` in our `simple_example()` function.
 
-```
+```php
 public function simple_example() {
-return [
-'#markup' => $this->serviceExampleService->getServiceExampleValue()
-];
+  return [
+    '#markup' => $this->serviceExampleService->getServiceExampleValue()
+  ];
 }
 ```
 
@@ -119,49 +119,49 @@ The final controller is `ServiceExampleController.php`:
 [Download this file](https://gist.github.com/acquialibrary/2e60c0efafd0385acaac/archive/8e1c0b9c1607f1e8b24d743b5ff1ccce5ff823f6.zip)
 
 ```php
- <?php
-
- /**
+<?php
+ 
+/**
  * @file
  * Contains \Drupal\service_example\ServiceExampleController.
  */
-
- namespace Drupal\service_example\Controller;
-
- use Drupal\service_example\ServiceExampleService;
- use Drupal\Core\Controller\ControllerBase;
- use Symfony\Component\DependencyInjection\ContainerInterface;
-
- class ServiceExampleController extends ControllerBase {
-
- /**
- * @var \Drupal\service_example\ServiceExampleService
- */
- protected $serviceExampleService;
-
- /**
- * {@inheritdoc}
- */
- public function __construct(ServiceExampleService $serviceExampleService) {
- $this->serviceExampleService = $serviceExampleService;
- }
-
- /**
- * {@inheritdoc}
- */
- public static function create(ContainerInterface $container) {
- return new static(
- $container->get('service_example.example_service')
- );
- }
-
- public function simple_example() { 
- return [
- '#markup' => $this->serviceExampleService->getServiceExampleValue()
- ];
- }
-
- }
+ 
+namespace Drupal\service_example\Controller;
+ 
+use Drupal\service_example\ServiceExampleService;
+use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+class ServiceExampleController extends ControllerBase {
+ 
+  /**
+   * @var \Drupal\service_example\ServiceExampleService
+   */
+  protected $serviceExampleService;
+ 
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct(ServiceExampleService $serviceExampleService) {
+    $this->serviceExampleService = $serviceExampleService;
+  }
+ 
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('service_example.example_service')
+    );
+  }
+ 
+  public function simple_example() {
+    return [
+      '#markup' => $this->serviceExampleService->getServiceExampleValue()
+    ];
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/2e60c0efafd0385acaac/raw/8e1c0b9c1607f1e8b24d743b5ff1ccce5ff823f6/ServiceExampleController.php) [ServiceExampleController.php](https://gist.github.com/acquialibrary/2e60c0efafd0385acaac#file-serviceexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)

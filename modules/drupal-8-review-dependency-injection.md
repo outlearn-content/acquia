@@ -62,37 +62,36 @@ This file provides the code to create the mood (`src/DIMoodRing.php`):
 [Download this file](https://gist.github.com/acquialibrary/88251c080bee4dc98719/archive/aae64579c52bf44101b59370714edd41e4e9c4f7.zip).
 
 ```php
- <?php
- /**
+<?php
+/**
  * @file Contains \Drupal\di_example\DIMoodRing
  */
-
- namespace Drupal\di_example;
-
- /**
+ 
+namespace Drupal\di_example;
+ 
+/**
  * A Service for reading a mood from a mood ring.
  *
  * This service does not have any dependencies.
  */
- class DIMoodRing {
- protected $moods = [
- 0 => 'Very Sad',
- 1 => 'Sad',
- 2 => 'So-so',
- 3 => 'Happy',
- 4 => 'Very Happy',
- ];
-
- /**
- * Returns a string that tells the user's current mood.
- *
- * @return string
- */
- public function getMood() {
- return $this->moods[rand(0,4)];
- }
-
- }
+class DIMoodRing {
+  protected $moods = [
+    0 => 'Very Sad',
+    1 => 'Sad',
+    2 => 'So-so',
+    3 => 'Happy',
+    4 => 'Very Happy',
+  ];
+ 
+  /**
+   * Returns a string that tells the user's current mood.
+   *
+   * @return string
+   */
+  public function getMood() {
+    return $this->moods[rand(0,4)];
+  }
+}
 ```
 [view raw](https://gist.github.com/acquialibrary/88251c080bee4dc98719/raw/aae64579c52bf44101b59370714edd41e4e9c4f7/DIMoodRing.php) [DIMoodRing.php](https://gist.github.com/acquialibrary/88251c080bee4dc98719#file-dimoodring-php) hosted with ❤ by [GitHub](https://github.com)
 

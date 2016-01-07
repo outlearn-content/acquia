@@ -23,39 +23,39 @@ A module's `libraries.yml` file defines libraries which include the CSS and Java
 
 Following is an example of `theme_example.libraries.yml`. In this example library, we have defined a single library, `sample-library`. It contains both JavaScript and CSS and is dependent on several core libraries. In Drupal 7, we assumed that jQuery, `jQuery.once`, and settings were available. In Drupal 8, you must define these as dependencies because they are not loaded by default.
 
-```
+```yml
 sample_library:
-css:
-# For some reason, you need to put css under 'theme'.
-theme:
-css/example.css: {}
-js:
-# For some reason, you need to put the js directly under 'js'.
-js/example.js: {}
-dependencies:
-# jQuery is not included by default, so we add it as a dependency
-- core/jquery
-# We are also going to use jQuery.once so that code doesn't trigger multiple times.
-- core/jquery.once
-# drupal and drupalSettings are not included by default either.
-- core/drupal
+  css:
+    # For some reason, you need to put css under 'theme'.
+    theme:
+      css/example.css: {}
+  js:
+    # For some reason, you need to put the js directly under 'js'.
+    js/example.js: {}
+  dependencies:
+    # jQuery is not included by default, so we add it as a dependency
+    - core/jquery
+    # We are also going to use jQuery.once so that code doesn't trigger multiple times.
+    - core/jquery.once
+    # drupal and drupalSettings are not included by default either.
+    - core/drupal
 ```
 
 Here two examples CSS statements that can be used with the library:
 
 ```css
 myElement {
-border: 3px solid purple;
-border-radius: 3px;
-padding: 1em;
-margin: 1em;
-background-color: #EEE;
+  border: 3px solid purple;
+  border-radius: 3px;
+  padding: 1em;
+  margin: 1em;
+  background-color: #EEE;
 }
 
 .myElement .randomNumber {
-color: purple;
-font-weight: bold;
-font-size: 1.2em;
+  color: purple;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 ```
 
@@ -63,30 +63,30 @@ font-size: 1.2em;
 
 Now that we have a library, we can reference it in a render array.
 
-```
+```php
 $output = [
-'#markup' => '<div>hello world</div>',
-'#attached => [
-'library' => [
-'theme_example/sample_library',
-],
-],
+  '#markup' => '<div>hello world</div>',
+  '#attached => [
+    'library' => [
+      'theme_example/sample_library',
+    ],
+  ],
 ];
 ```
 
 We can also define a setting that will be passed to JavaScript.
 
-```
+```php
 $output = [
-'#markup' => '<div>hello world</div>',
-'#attached => [
-// This setting will be sent to drupalSettings.sampleLibrary.mySetting.
-'drupalSettings' => [
-'sampleLibrary' => [
-'mySetting' => 'hello world',
-],
-],
-],
+  '#markup' => '<div>hello world</div>',
+  '#attached => [
+    // This setting will be sent to drupalSettings.sampleLibrary.mySetting.
+    'drupalSettings' => [
+      'sampleLibrary' => [
+        'mySetting' => 'hello world',
+      ],
+    ],
+  ],
 ];
 ```
 
@@ -101,42 +101,43 @@ Finally, update the file `src/Element/MyElement.php`:
 [Download this file](https://gist.github.com/acquialibrary/571b269d5c6d56afc115/archive/962f52db459fe1952df9411807976b7125a2cccf.zip).
 
 ```php
- /**
+/**
  * Prepare the render array for the template.
  */
- public static function preRenderMyElement($element) {
- // Create a link render array using our #label.
- $element['link'] = [
- '#type' => 'link',
- '#title' => $element['#label'],
- '#url' => Url::fromUri('http://www.drupal.org'),  ];
-
- // Create a description render array using #description.
- $element['description'] = [
- '#markup' => $element['#description']
- ];
-
- $element['pre_render_addition'] = [
- '#markup' => 'Additional text.'
- ];
-
- // Create a variable.
- $element['#random_number'] = rand(0,100);
-
- // Add the library
- $element['#attached'] = [
- 'library' => [
- 'theme_example/sample_library',
- ],
- 'drupalSettings' => [
- 'sampleLibrary' => [
- 'mySetting' => 'hello world',
- ],
- ],
- ];
-
- return $element;
- }
+public static function preRenderMyElement($element) {
+  // Create a link render array using our #label.
+  $element['link'] = [
+    '#type' => 'link',
+    '#title' => $element['#label'],
+    '#url' => Url::fromUri('http://www.drupal.org'),
+  ];
+ 
+  // Create a description render array using #description.
+  $element['description'] = [
+    '#markup' => $element['#description']
+  ];
+ 
+  $element['pre_render_addition'] = [
+    '#markup' => 'Additional text.'
+  ];
+ 
+  // Create a variable.
+  $element['#random_number'] = rand(0,100);
+ 
+  // Add the library
+  $element['#attached'] = [
+    'library' => [
+      'theme_example/sample_library',
+    ],
+    'drupalSettings' => [
+      'sampleLibrary' => [
+        'mySetting' => 'hello world',
+      ],
+    ],
+  ];
+ 
+  return $element;
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/571b269d5c6d56afc115/raw/962f52db459fe1952df9411807976b7125a2cccf/MyElement.php) [MyElement.php](https://gist.github.com/acquialibrary/571b269d5c6d56afc115#file-myelement-php) hosted with ❤ by [GitHub](https://github.com)
@@ -149,26 +150,26 @@ The JavaScript best practices are largely the same as in Drupal 7\. We wrap the 
 
 ```
 (function ($) {
-Drupal.behaviors.themeExample = {
-attach: function (context, settings) {
-// jQuery once ensures that code does not run after an AJAX or other function that calls Drupal.attachBehaviors().
-$('body').once('themeExample').each(function () {
-// We have console.log() here to make it easy to see that this code is functioning. You should never use console.log() on production code!
-if (typeof console.log === 'function') {
-console.log('My Setting: ' + settings.sampleLibrary.mySetting);
-}
-});
-if (typeof console.log === 'function') {
-console.log('This will run every time Drupal.attachBehaviors is run.');
-}
-$('body').once('themeExampleModifyDOM').each(function () {
-// Add an element to the body.
-$('body').append('<div class="example">Hello World</div>');
-// Tell Drupal that we modified the DOM.
-Drupal.attachBehaviors();
-});
-}
-};
+  Drupal.behaviors.themeExample = {
+    attach: function (context, settings) {
+      // jQuery once ensures that code does not run after an AJAX or other function that calls Drupal.attachBehaviors().
+      $('body').once('themeExample').each(function () {
+        // We have console.log() here to make it easy to see that this code is functioning. You should never use console.log() on production code!
+        if (typeof console.log === 'function') {
+          console.log('My Setting: ' + settings.sampleLibrary.mySetting);
+        }
+      });
+      if (typeof console.log === 'function') {
+        console.log('This will run every time Drupal.attachBehaviors is run.');
+      }
+      $('body').once('themeExampleModifyDOM').each(function () {
+        // Add an element to the body.
+        $('body').append('<div class="example">Hello World</div>');
+        // Tell Drupal that we modified the DOM.
+        Drupal.attachBehaviors();
+      });
+    }
+  };
 })(jQuery);
 ```
 

@@ -89,9 +89,9 @@ With controllers, getting access to the container is very easy. We can extend th
 <?php
 
 /**
-* @file
-* Contains \Drupal\service_example\ServiceExampleController.
-*/
+ * @file
+ * Contains \Drupal\service_example\ServiceExampleController.
+ */
 
 namespace Drupal\service_example\Controller;
 
@@ -101,14 +101,14 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ServiceExampleController extends ControllerBase {
 
-/**
-* {@inheritdoc}
-*/
-public static function create(ContainerInterface $container) {
-return new static(
-$container->get('service_example.example_service')
-);
-}
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('service_example.example_service')
+    );
+  }
 }
 ```
 
@@ -116,20 +116,21 @@ $container->get('service_example.example_service')
 
 The `create()` method on the controller gets the container passed in, and then it can inject anything in the container into the constructor. So if you know what service(s) you want your controller to have access to, you can do the following:
 
-```
+```php
 class QueryExampleController extends ControllerBase {
 protected $entity_query;
 protected $entity_manager;
 
 public function __construct(QueryFactory $entity_query, EntityManagerInterface $entity_manager) {
-$this->entity_query = $entity_query;
-$this->entity_manager = $entity_manager;
+  $this->entity_query = $entity_query;
+  $this->entity_manager = $entity_manager;
 }
+
 public static function create(ContainerInterface $container) {
-return new static(
-$container->get('entity.query'),
-$container->get('entity.manager')
-);
+  return new static(
+    $container->get('entity.query'),
+    $container->get('entity.manager')
+  );
 }
 ```
 

@@ -44,30 +44,30 @@ We will talk about services more in later chapters. In this example, we will use
 
 [Download this file](https://gist.github.com/acquialibrary/d7fa2f328579c28baaec/archive/d92d1b6b405c2cc880e2b009fb34387cc3745cad.zip).
 
-```
- // This function and the next are part of the dependency injection pattern. We will explain those in future chapters.
- public function __construct(QueryFactory $entity_query) {
- $this->entity_query = $entity_query;
- }
-
- public static function create(ContainerInterface $container) {
- return new static(
- // User the $container to get a query factory object. This object let's us create query objects.
- $container->get('entity.query')
- );
- }
-
- // This function shows how to
- public function myCallback() {
- // Use the factory to create a query object for node entities.
- $query = $this->entity_query->get('node');
-
- // Add a filter (published).
- $query->condition('status', 1);
-
- // Run the query.
- $nids = $query->execute();
- }
+```php
+// This function and the next are part of the dependency injection pattern. We will explain those in future chapters.
+public function __construct(QueryFactory $entity_query) {
+  $this->entity_query = $entity_query;
+}
+  
+public static function create(ContainerInterface $container) {
+  return new static(
+    // User the $container to get a query factory object. This object let's us create query objects.
+    $container->get('entity.query')
+  );
+}
+ 
+// This function shows how to
+public function myCallback() {
+  // Use the factory to create a query object for node entities.
+  $query = $this->entity_query->get('node');
+ 
+  // Add a filter (published).
+  $query->condition('status', 1);
+ 
+  // Run the query.
+  $nids = $query->execute();
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/d7fa2f328579c28baaec/raw/d92d1b6b405c2cc880e2b009fb34387cc3745cad/query_object.php) [query_object.php](https://gist.github.com/acquialibrary/d7fa2f328579c28baaec#file-query_object-php) hosted with ❤ by [GitHub](https://github.com)
@@ -96,12 +96,12 @@ The following are examples of querying for node entities using a query object.
 
 This is an example of a basic static query capable of returning a site's published nodes. The `$nids` variable will return an array of node ids. These nids will be keyed by revision ids in the event that revisioning is enabled for the entity type of node. Or, the nids will be keyed by the entity ids if revisioning is disabled.
 
-```
+```php
 /**
-* @var $query \Drupal\Core\Entity\Query\QueryInterface
-*/
+ * @var $query \Drupal\Core\Entity\Query\QueryInterface
+ */
 $query = $this->entity_query->get('node')
-->condition('status', 1);
+  ->condition('status', 1);
 
 $nids = $query->execute();
 ```
@@ -119,12 +119,12 @@ In an IDE like PHPStorm, providing comments allows the system to provide autocom
 
 The next example uses both property and field conditions in addition to checking for a published status of `true`. In this query, we retrieve the node ids of all the published nodes that were last updated, prior to the time the query was run. The node title must contain the word the words _ipsum lorem_. The node will contain the taxonomy term called `test` as a value in the field `field_tags`.
 
-```
+```php
 $query = $this->entity_query->get('node')
-->condition('status', 1)
-->condition('changed', REQUEST_TIME, '<')
-->condition('title', 'ipsum lorem', 'CONTAINS')
-->condition('field_tags.entity.name', 'test');
+  ->condition('status', 1)
+  ->condition('changed', REQUEST_TIME, '<')
+  ->condition('title', 'ipsum lorem', 'CONTAINS')
+  ->condition('field_tags.entity.name', 'test');
 
 $nids = $query->execute();
 ```
@@ -138,14 +138,14 @@ This example demonstrates how condition groups which can include both AND and OR
 *   the `ipsum lorem` string in their title
 *   have a reference to the taxonomy term `test` in their `field_tags` field.
 
-```
+```php
 $query = $this->entity_query->get('node')
-->condition('status', 1)
-->condition('changed', REQUEST_TIME, '<');
+  ->condition('status', 1)
+  ->condition('changed', REQUEST_TIME, '<');
 
 $group = $query->orConditionGroup()
-->condition('title', 'ipsum lorem', 'CONTAINS')
-->condition('field_tags.entity.name', 'test');
+  ->condition('title', 'ipsum lorem', 'CONTAINS')
+  ->condition('field_tags.entity.name', 'test');
 
 $nids = $query->condition($group)->execute();
 ```
@@ -158,7 +158,7 @@ These are only two of a longer [list](https://api.drupal.org/api/drupal/core%21l
 
 By default, the entity query will only return the most recent revision for each entity. You can obtain the revisions by using `allRevisions()`.
 
-```
+```php
 $query->allRevisions();
 ```
 

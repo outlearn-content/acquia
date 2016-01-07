@@ -80,33 +80,34 @@ The `ServiceExampleService.php` file looks very similar to controllers. We descr
 [Download this file](https://gist.github.com/acquialibrary/baab3196a591cadcb7cc/archive/446300388665064979cd781701983c80e51a20b5.zip).
 
 ```php
- <?php
- /**
+<?php
+ 
+/**
  * @file
  * Contains \Drupal\service_example\ServiceExampleService.
  */
-
- namespace Drupal\service_example;
-
- class ServiceExampleService {
-
- protected $service_example_value;
-
- /**
- * When the service is created, set a value for the example variable.
- */
- public function __construct() {
- $this->service_example_value = 'Student';
- }
-
- /**
- * Return the value of the example variable.
- */
- public function getServiceExampleValue() {
- return $this->service_example_value;
- }
-
- }
+ 
+namespace Drupal\service_example;
+ 
+class ServiceExampleService {
+ 
+  protected $service_example_value;
+ 
+  /**
+   * When the service is created, set a value for the example variable.
+   */
+  public function __construct() {
+    $this->service_example_value = 'Student';
+  }
+ 
+  /**
+   * Return the value of the example variable.
+   */
+  public function getServiceExampleValue() {
+    return $this->service_example_value;
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/baab3196a591cadcb7cc/raw/446300388665064979cd781701983c80e51a20b5/ServiceExampleService.php) [ServiceExampleService.php](https://gist.github.com/acquialibrary/baab3196a591cadcb7cc#file-serviceexampleservice-php) hosted with ❤ by [GitHub](https://github.com)

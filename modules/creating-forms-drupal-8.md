@@ -34,20 +34,24 @@ First, we'll create a single block to contain the form:
 1.  Create the file `block_example/src/Plugin/Block/ExampleConfigurableTextBlock.php`.
 2.  Paste the following code into the new file:
 
-    [Download this file](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac/archive/0383d8f543b0d3a666b9f4a9581d99d2e2191f1d.zip).
+[Download this file](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac/archive/0383d8f543b0d3a666b9f4a9581d99d2e2191f1d.zip).
 
 ```php
- <?php
- /**
+<?php
+
+/**
  * @file
  * Contains \Drupal\block_example\Plugin\Block\ExampleConfigurableTextBlock.
  */
- namespace Drupal\block_example\Plugin\Block;
- use Drupal\Core\Block\Annotation\Block;
- use Drupal\Core\Block\BlockBase;
- use Drupal\Core\Annotation\Translation;
- use Drupal\Core\Form\FormStateInterface;
- /**
+
+namespace Drupal\block_example\Plugin\Block;
+
+use Drupal\Core\Block\Annotation\Block;
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Annotation\Translation;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
  * Provides a 'Example: configurable text string' block.
  *
  * Drupal\block\BlockBase gives us a very useful set of basic functionality for
@@ -55,52 +59,55 @@ First, we'll create a single block to contain the form:
  * defaultConfiguration(), blockForm(), blockSubmit(), and build().
  *
  * @Block(
- * id="example_configurable_text",
- * admin_label = @Translation("Title of first block (example_configurable_text)"),
- * category = @Translation("Example")
+ *   id = "example_configurable_text",
+ *   admin_label = @Translation("Title of first block (example_configurable_text)"),
+ *   category = @Translation("Example")
  * )
+ */
+class ExampleConfigurableTextBlock extends BlockBase {
 
-*/
-  class ExampleConfigurableTextBlock extends BlockBase {
- /**
+  /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return [
+      'block_example_string' => $this->t('A default value. This block was created at %time', ['%time' => date('c')]),
+    ];
+  }
 
- * {@inheritdoc}
- */
- public function defaultConfiguration() {
- return [
- 'block_example_string' => $this->t('A default value. This block was created at %time', ['%time' => date('c')]),
- ];
- }
- /**
- * {@inheritdoc}
- */
- public function blockForm($form, FormStateInterface $form_state) {
- $form['block_example_string_text'] = [
- '#type' => 'textfield',
- '#title' => $this->t('Block contents'),
- '#size' => 60,
- '#description' => $this->t('This text will appear in the example block.'),
- '#default_value' => $this->configuration['block_example_string'],
- ];
- return $form;
- }
- /**
- * {@inheritdoc}
- */
- public function blockSubmit($form, FormStateInterface $form_state) {
- $this->configuration['block_example_string']
- = $form_state->getValue('block_example_string_text');
- }
- /**
- * {@inheritdoc}
- */
- public function build() {
- return [
- '#type' => 'markup',
- '#markup' => $this->configuration['block_example_string'],
- ];
- }
- }
+  /**
+   * {@inheritdoc}
+   */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form['block_example_string_text'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Block contents'),
+      '#size' => 60,
+      '#description' => $this->t('This text will appear in the example block.'),
+      '#default_value' => $this->configuration['block_example_string'],
+    ];
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    $this->configuration['block_example_string']
+      = $form_state->getValue('block_example_string_text');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    return [
+      '#type' => 'markup',
+      '#markup' => $this->configuration['block_example_string'],
+    ];
+  }
+
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac/raw/0383d8f543b0d3a666b9f4a9581d99d2e2191f1d/ExampleConfigurableTextBlock.php) [ExampleConfigurableTextBlock.php](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac#file-exampleconfigurabletextblock-php) hosted with ❤ by [GitHub](https://github.com)
@@ -147,50 +154,59 @@ It creates an email field, which is a new form element in Drupal 8\. The goal is
 [Download this file](https://gist.github.com/acquialibrary/d930049031773997317c/archive/3eb25764b6a53d3e0abb70760d534b73367b5ac9.zip).
 
 ```php
- <?php
- /**
+<?php
+
+/**
  * @file
  * Contains \Drupal\page_example\Form\PageExampleForm.
  */
- namespace Drupal\page_example\Form;
- use Drupal\Core\Form\FormBase;
- use Drupal\Core\Form\FormStateInterface;
- class PageExampleForm extends FormBase {
- /**
- * {@inheritdoc}.
- */
- public function getFormId() {
- return 'page_example_form';
- }
- /**
- * {@inheritdoc}.
- */
- public function buildForm(array $form, FormStateInterface $form_state) {
- $form['email'] = [
- '#type' => 'email',
- '#title' => $this->t('Your .com email address.')
- ];
- $form['show'] = [
- '#type' => 'submit',
- '#value' => $this->t('Submit'),
- ];
- return $form;
- }
- /**
- * {@inheritdoc}
- */
- public function validateForm(array &$form, FormStateInterface $form_state) {
- if (strpos($form_state->getValue('email'), '.com') === FALSE) {
- $form_state->setErrorByName('email', $this->t('This is not a .com email address.'));
- }
- }
- /**
- * {@inheritdoc}
- */
- public function submitForm(array &$form, FormStateInterface $form_state) {
- drupal_set_message($this->t('Your email address is @email', ['@email' => $form_state->getValue('email')]));
- }
- }
+
+namespace Drupal\page_example\Form;
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+
+class PageExampleForm extends FormBase {
+
+  /**
+   * {@inheritdoc}.
+   */
+  public function getFormId() {
+    return 'page_example_form';
+  }
+
+  /**
+   * {@inheritdoc}.
+   */
+  public function buildForm(array $form, FormStateInterface $form_state) {
+    $form['email'] = [
+      '#type' => 'email',
+      '#title' => $this->t('Your .com email address.')
+    ];
+    $form['show'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Submit'),
+    ];
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    if (strpos($form_state->getValue('email'), '.com') === FALSE) {
+      $form_state->setErrorByName('email', $this->t('This is not a .com email address.'));
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function submitForm(array &$form, FormStateInterface $form_state) {
+    drupal_set_message($this->t('Your email address is @email', ['@email' => $form_state->getValue('email')]));
+  }
+
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/d930049031773997317c/raw/3eb25764b6a53d3e0abb70760d534b73367b5ac9/PageExampleForm.php) [PageExampleForm.php](https://gist.github.com/acquialibrary/d930049031773997317c#file-pageexampleform-php) hosted with ❤ by [GitHub](https://github.com)
@@ -209,12 +225,12 @@ In the code example above everything should resemble building a form in Drupal 7
     To use this form, a route must be defined and added to the already existing `page_example.routing.yml` file:
 
 ```yml
-page_example_form:  
-  path: '/examples/page_example/form'  
-  defaults:  
-    _form: '\Drupal\page_example\Form\PageExampleForm'  
-    _title: 'Demo Form'  
-  requirements:  
+page_example_form:
+  path: '/examples/page_example/form'
+  defaults:
+    _form: '\Drupal\page_example\Form\PageExampleForm'
+    _title: 'Demo Form'
+  requirements:
     _permission: 'access simple page'
 ```
 
@@ -228,8 +244,8 @@ It should look like this:
 
 If you are familiar with `drupal_get_form()` and are wondering how to load a form like Drupal 7, the answer is in the global Drupal class. To retrieve a form, you can use its `formBuilder()` method and do something like this:
 
-```
-  $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
+```php
+$form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
 ```
 
 > **IMPORTANT**

@@ -128,35 +128,35 @@ theme_example.simple:
 [Download this file](https://gist.github.com/acquialibrary/a0d02ba0529c5fddd9e7/archive/ce2e1d1ea45fe92780c65b56812e471936dd6146.zip).
 
 ```php
- <?php
-
- /**
+<?php
+ 
+/**
  * @file
  * Contains \Drupal\theme_example\Controller\ThemeExampleController.
  */
-
- namespace Drupal\theme_example\Controller;
-
- use Drupal\Core\Controller\ControllerBase;
-
- /**
+ 
+namespace Drupal\theme_example\Controller;
+ 
+use Drupal\Core\Controller\ControllerBase;
+ 
+/**
  * Controller routines for theme example routes.
  */
- class ThemeExampleController extends ControllerBase {
-
- public function simple() {
- return [
- 'example one' => [
- '#markup' => '<div>Markup Example</div>',
- ],
- 'example two' => [
- '#type' => 'my_element',
- '#label' => $this->t('Example Label'),
- '#description' => $this->t('This is the description text.'),
- ],
- ];
- }
- }
+class ThemeExampleController extends ControllerBase {
+ 
+  public function simple() {
+    return [
+      'example one' => [
+        '#markup' => '<div>Markup Example</div>',
+      ],
+      'example two' => [
+        '#type' => 'my_element',
+        '#label' => $this->t('Example Label'),
+        '#description' => $this->t('This is the description text.'),
+      ],
+    ];
+  }
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/a0d02ba0529c5fddd9e7/raw/ce2e1d1ea45fe92780c65b56812e471936dd6146/ThemeExampleController.php) [ThemeExampleController.php](https://gist.github.com/acquialibrary/a0d02ba0529c5fddd9e7#file-themeexamplecontroller-php) hosted with ❤ by [GitHub](https://github.com)
@@ -169,21 +169,21 @@ theme_example.simple:
 
 In the controller (`ThemeExampleController.php`), we created three elements/render arrays. The first is a container that contains **example one** and **example two** which are both elements/render arrays. **example one** is the most basic type of render array. This simplest form of a render array contains one key `#markup` and an associated value which is the markup to print.
 
-```
+```php
 $output = [
-'#markup' => '<div>Markup Example</div>',
+  '#markup' => '<div>Markup Example</div>',
 ];
 ```
 
- More complex render arrays like example two contain a set of variables that are prefixed with # and children elements.
+More complex render arrays like example two contain a set of variables that are prefixed with # and children elements.
 
- Our second element is the basic render array that will eventually become our element markup. It is defined by `#type my_element` and contains the **label** and **description** variables. It contains no child elements at this point. At this point, the render array does not contain the link or random number. Those will be added later.
+Our second element is the basic render array that will eventually become our element markup. It is defined by `#type my_element` and contains the **label** and **description** variables. It contains no child elements at this point. At this point, the render array does not contain the link or random number. Those will be added later.
 
- ```
- $output = [
-'#type' => 'my_element',
-'#label' => $this->t('Example Label'),
-'#description' => $this->t('This is the description text.'),
+```php
+$output = [
+  '#type' => 'my_element',
+  '#label' => $this->t('Example Label'),
+  '#description' => $this->t('This is the description text.'),
 ];
 ```
 
@@ -212,62 +212,64 @@ Our plugin contains a [`#pre_render`](https://api.drupal.org/api/drupal/8/search
 [Download this file](https://gist.github.com/acquialibrary/a4035855cbcf36ed0703/archive/998301b282eebf4e5dfa6e3a65a0c1cdbd9ed247.zip).
 
 ```php
- <?php
- /**
+<?php
+/**
  * @file
  * Contains \Drupal\theme_example\Element\MyElement.
  */
-
- namespace Drupal\theme_example\Element;
-
- use Drupal\Core\Render\Element\RenderElement;
- use Drupal\Core\Url;
-
- /**
+ 
+namespace Drupal\theme_example\Element;
+ 
+use Drupal\Core\Render\Element\RenderElement;
+use Drupal\Core\Url;
+ 
+/**
  * Provides an example element.
  *
  * @RenderElement("my_element")
  */
- class MyElement extends RenderElement {
- /**
- * {@inheritdoc}
- */
- public function getInfo() {
- $class = get_class($this);
- return [
- '#theme' => 'my_element',
- '#label' => 'Default Label',
- '#description' => 'Default Description',
- '#pre_render' => [
- [$class, 'preRenderMyElement'],
- ],
- ];
- }
-
- /**
- * Prepare the render array for the template.
- */
- public static function preRenderMyElement($element) {
- // Create a link render array using our #label.
- $element['link'] = [
- '#type' => 'link',
- '#title' => $element['#label'],
- '#url' => Url::fromUri('http://www.drupal.org'),
- ];
-
- // Create a description render array using #description.
- $element['description'] = [
- '#markup' => $element['#description']
- ];
- $element['pre_render_addition'] = [
- '#markup' => 'Additional text.'
- ];
-
- // Create a variable.
- $element['#random_number'] = rand(0,100);
- return $element;
- }
- }
+class MyElement extends RenderElement {
+  /**
+   * {@inheritdoc}
+   */
+  public function getInfo() {
+    $class = get_class($this);
+    return [
+      '#theme' => 'my_element',
+      '#label' => 'Default Label',
+      '#description' => 'Default Description',
+      '#pre_render' => [
+        [$class, 'preRenderMyElement'],
+      ],
+    ];
+  }
+ 
+  /**
+   * Prepare the render array for the template.
+   */
+  public static function preRenderMyElement($element) {
+    // Create a link render array using our #label.
+    $element['link'] = [
+      '#type' => 'link',
+      '#title' => $element['#label'],
+      '#url' => Url::fromUri('http://www.drupal.org'),
+    ];
+ 
+    // Create a description render array using #description.
+    $element['description'] = [
+      '#markup' => $element['#description']
+    ];
+ 
+    $element['pre_render_addition'] = [
+      '#markup' => 'Additional text.'
+    ];
+ 
+    // Create a variable.
+    $element['#random_number'] = rand(0,100);
+ 
+    return $element;
+  }
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/a4035855cbcf36ed0703/raw/998301b282eebf4e5dfa6e3a65a0c1cdbd9ed247/MyElement.php) [MyElement.php](https://gist.github.com/acquialibrary/a4035855cbcf36ed0703#file-myelement-php) hosted with ❤ by [GitHub](https://github.com)
@@ -284,14 +286,14 @@ In [`hook_theme`](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%2
 <?php
 
 /**
-* Implements hook_theme().
-*/
+ * Implements hook_theme().
+ */
 function theme_example_theme() {
-$items = [
-'my_element' => [
-'render element' => 'element',
-],
-];
-return $items;
+  $items = [
+    'my_element' => [
+      'render element' => 'element',
+    ],
+  ];
+  return $items;
 }
 ```

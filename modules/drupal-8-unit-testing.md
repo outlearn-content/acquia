@@ -74,43 +74,43 @@ The `tests/src/Unit/TestExampleConversionsTest.php` file:
 [Download this file](https://gist.github.com/acquialibrary/b6e3497867a0e8197f85/archive/950886c91c7dd70ce81c65118aa86bf999d329d0.zip).
 
 ```php
- <?php
-
- /**
+<?php
+ 
+/**
  * @file
  *
  * Contains \Drupal\Tests\test_example\Unit\TestExampleConversionsTest.
  */
-
- namespace Drupal\Tests\test_example\Unit;
-
- use Drupal\Tests\UnitTestCase;
-
- /**
+ 
+namespace Drupal\Tests\test_example\Unit;
+ 
+use Drupal\Tests\UnitTestCase;
+ 
+/**
  * Demonstrates how to write tests.
  *
  * @group test_example
  */
- class TestExampleConversionsTest extends UnitTestCase {
-
- /**
- * @var \Drupal\test_example\TestExampleConversions
- */
- public $conversionService;
-
- public function setUp() {
- $this->conversionService = new \Drupal\test_example\TestExampleConversions();
- }
-
- /**
- * A simple test that tests our celsiusToFahrenheit() function.
- */
- public function testOneConversion() {
- // Confirm that 0C = 32F.
- $this->assertEquals(32, $this->conversionService->celsiusToFahrenheit(0));
- }
-
- }
+class TestExampleConversionsTest extends UnitTestCase {
+ 
+  /**
+   * @var \Drupal\test_example\TestExampleConversions
+   */
+  public $conversionService;
+ 
+  public function setUp() {
+    $this->conversionService = new \Drupal\test_example\TestExampleConversions();
+  }
+ 
+  /**
+   * A simple test that tests our celsiusToFahrenheit() function.
+   */
+  public function testOneConversion() {
+    // Confirm that 0C = 32F.
+    $this->assertEquals(32, $this->conversionService->celsiusToFahrenheit(0));
+  }
+ 
+}
 ```
 
 [view raw](https://gist.github.com/acquialibrary/b6e3497867a0e8197f85/raw/950886c91c7dd70ce81c65118aa86bf999d329d0/TestExampleConversionsTest.php) [TestExampleConversionsTest.php](https://gist.github.com/acquialibrary/b6e3497867a0e8197f85#file-testexampleconversionstest-php) hosted with ❤ by [GitHub](https://github.com)
@@ -145,28 +145,29 @@ Unit tests can become fairly complex. One simple way to reduce repetitive code i
 
 A data provider in PHPUnit is a method that provides configuration for a testing method. This provider returns an array of test cases which contain an array of test arguments. In this example, we create a data provider `providerCentimetersToInches`. This provider returns a list of parameters.
 
-```
+```php
 /**
-* Provides data for the testCentimetersToInches method.
-*
-* @return array
-*/
+ * Provides data for the testCentimetersToInches method.
+ *
+ * @return array
+ */
 public function providerCentimetersToInches() {
-return [
-[2.54,1],
-[254,100],
-[0,0],
-[-2.54,-1],
-];
+  return [
+    [2.54,1],
+    [254,100],
+    [0,0],
+    [-2.54,-1],
+  ];
 }
 
 /**
-* Tests centimetersToInches method.
-*
-* @dataProvider providerCentimetersToInches
-*/
+ * Tests centimetersToInches method.
+ *
+ * @dataProvider providerCentimetersToInches
+ */
 public function testCentimetersToInches($length, $expectedValue) {
-$this->assertEquals($expectedValue, $this->conversionService->centimeterToInch($length));
+  $this->assertEquals($expectedValue, $this->conversionService->centimeterToInch($length));
+}
 ```
 
 *   **Data Provider Annotation**

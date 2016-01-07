@@ -21,23 +21,23 @@
 
 You can set HTML attributes (such as IDs and classes) as part of the render array. These will then be passed to the Twig template which allows a themer to ad to or override the default. To do this, add the `#attributes` variable to the render array. The keys of this array are the attributes and the values are their values.
 
-```
+```php
 $element = [
-'#type' => 'my_element',
-'#config_one' => 'blue',
+  '#type' => 'my_element',
+  '#config_one' => 'blue',
 ];
 
 $element['#attributes'] = [
-'id' => 'my_blue_element_1',
-'class' => ['my-element','blue'],
+  'id' => 'my_blue_element_1',
+  'class' => ['my-element','blue'],
 ];
 ```
 
 This allows for the following type of preprocess hook — the `$variables['attributes']` was created by `template_process()` in `theme.inc` which is run on all render arrays. This creates what appears to be duplication since the original values are also in `$variables['element']['#attributes']`, but those original values are not used any more:
 
-```
+```php
 function hook_preprocess_my_element(&$variables) {
-$variables['attributes']['id'] = 'my_blue_element_altered_id';
+  $variables['attributes']['id'] = 'my_blue_element_altered_id';
 }
 ```
 
@@ -59,17 +59,17 @@ After the preprocess functions act on the `attributes` variables, they are conve
 
 You can wrap your element with a div and add classes to this using the preceding attribute pattern. This can be done by adding a `#theme_wrappers` to a render array. The most common type of wrapper is a container which prints the attributes.
 
-```
+```php
 $element = [
-'#type' => 'my_element',
-'#config_one' => 'blue',
-'#theme_wrappers' => [
-'container' => [
-'#attributes' => [
-'class' => ['my-wrapper-class']
-],
-],
-],
+  '#type' => 'my_element',
+  '#config_one' => 'blue',
+  '#theme_wrappers' => [
+    'container' => [
+      '#attributes' => [
+        'class' => ['my-wrapper-class']
+      ],
+    ],
+  ],
 ];
 ```
 
@@ -77,10 +77,10 @@ With this, you can use the `container.html.twig` file which uses the pattern sho
 
 ```
 {%
-set classes = [
-has_parent ? 'js-form-wrapper',
-has_parent ? 'form-wrapper',
-]
+  set classes = [
+    has_parent ? 'js-form-wrapper',
+    has_parent ? 'form-wrapper',
+  ]
 %}
 <div{{ attributes.addClass(classes) }}>{{ children }}</div>
 ```

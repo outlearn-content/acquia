@@ -93,18 +93,18 @@ $age = '33';
 
 // This is a function
 function displayAge() {
-return $age;
+  return $age;
 }
 
 // This is a class
 class personClass {
-// This is a property variable
-public $age = '33';
+  // This is a property variable
+  public $age = '33';
 
-// This is a method
-public function displayAge() {
-return $this->age;
-}
+  // This is a method
+  public function displayAge() {
+    return $this->age;
+  }
 }
 
 // This is an instantiated class
