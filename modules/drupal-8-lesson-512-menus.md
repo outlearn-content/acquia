@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## What happened to hook_menu() and its callbacks?
 
 In Drupal 8, the `hook_menu()` system has been split into separate YAML files:

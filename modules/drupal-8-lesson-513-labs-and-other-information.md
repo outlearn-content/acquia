@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and Summary
 
 This lesson explored module development in Drupal 8, learning how to work with the new APIs and porting contributed modules.

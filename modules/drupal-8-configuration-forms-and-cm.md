@@ -11,26 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-This lesson introduces both a special type of form called a _configuration form_ and Configuration Management (CM), which describes the effort made to gather the multiple sources of configuration information and functions in Drupal 7 into a single system in Drupal 8.
-
-We also take this opportunity to demonstrate how to use boiler plate code. We will guide you through modifying a copy of the `page_example` module which is part of the larger [Examples](http://drupal.org/project/examples) project. We will modify the page_example module so that it uses a configuration form to store a single default value in the configuration system.
-
-<!-- @section -->
-
-## In this lesson...
-
-*   Learn about CM (Configuration Management).
-*   Assemble the module `examples/configform_example`.
-*   Learn about configuration forms.
-*   Explore building a configuration form.
-*   Explore creating `*.settings.yml` files as an introduction to using CM to store configurations for a module.
-
-<!-- @section -->
-
 ## Configuration Management
 
 [Drupal 8 Configuration Management](https://groups.drupal.org/build-systems-change-management/cmi), or CM, is powered by a [configuration API](https://www.drupal.org/developing/api/8/configuration) and provides a central place for modules to store configuration data. This can be simple static data like the site name, or configuration for more complex objects like field definitions or image styles. It is meant to replace contributed solutions like Drupal 7 [CTools](http://drupal.org/project/ctools) exportables and enhance other contributed Drupal 7 modules, such as the [Features](http://drupal.org/project/features) module.

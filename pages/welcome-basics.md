@@ -1,6 +1,6 @@
 # Welcome!
 
-Greetings! Welcome to part 1 of our learning path series *Building modules with Drupal 8*!
+Greetings! Welcome to Part 1 of our learning path series *Building modules with Drupal 8*!
 
 We built this path using [Acquia's D8 module development training](https://docs.acquia.com/articles/building-drupal-8-modules), and enhanced the learning experience to make it more engaging by inserting little tasks and quizzes at appropriate points.
 
