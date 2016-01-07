@@ -12,6 +12,7 @@
       "pages" : [
         {"page" : "./pages/welcome-basics.md"},
         {"module" : "acquia-building-modules-intro"},
+        {"page" : "./pages/basics-lesson1.md"},
         {"module" : "examples-module-symfony-controllers-and-menu"},
         {"module" : "drupal-8-lesson-512-menus"},
         {"module" : "drupal-8-lesson-513-labs-and-other-information"},
