@@ -66,6 +66,7 @@
         {"module" : "drupal-8-services-and-controllers"},
         {"module" : "drupal-8-dependency-injection"},
         {"module" : "drupal-8-dependency-injection-summary"},
+        {"page" : "./pages/mastering-lesson9.md"},
         {"module" : "drupal-8-creating-elements-theming-elements-and-managing-frontend-libraries"},
         {"module" : "drupal-8-twig"},
         {"module" : "drupal-8-adding-javascript-css-libraries-components"},
