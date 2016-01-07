@@ -38,6 +38,7 @@
         {"page" : "./pages/welcome-entities-fields.md"},
         {"module" : "drupal-8-entities-content-entities-and-configuration-entities"},
         {"module" : "drupal-8-entities-lab"},
+         {"page" : "./pages/entities-lesson5.md"},
         {"module" : "drupal-8-fields-entities"},
         {"module" : "drupal-8-exporting-configurations"},
         {"module" : "drupal-8-fields-lab-and-other-information"},
