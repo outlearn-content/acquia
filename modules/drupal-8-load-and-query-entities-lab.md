@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and summary
 
 In this lesson, we’ve seen how to work with querying and loading entities in Drupal 8\. There has been an overhaul of the Drupal 7 `EntityFieldQuery` class that turned into a robust API for querying both content and configuration entities. We’ve looked at querying content entities but the system works just the same with config entities.
