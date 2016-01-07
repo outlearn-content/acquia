@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Injection in services
 
 When we defined our service above we mapped the service name to the service class. The service is completely independent when created this way. If we want to create a service that uses other services, we must inject its dependencies by defining these dependencies in the `services.yml` file. In these updated definitions, we have created a new `di_example.talk` service that will use both the `current_user` and `di_example.mood_ring` services.
