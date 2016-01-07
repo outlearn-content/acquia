@@ -78,6 +78,7 @@
         {"module" : "drupal-8-unit-testing"},
         {"module" : "drupal-8-functional-tests"},
         {"module" : "drupal-8-phpunit-doubles-mocks-stubs"},
+        {"page" : "./pages/mastering-lesson11.md"},
         {"module" : "drupal-8-review-dependency-injection"},
         {"module" : "drupal-8-dependency-injection-and-services"},
         {"module" : "drupal-8-dependency-injection-and-controllers"},
