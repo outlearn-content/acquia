@@ -1,4 +1,4 @@
-# Creating an Element
+# Elements
 
 ## In this lesson...
 
