@@ -13,14 +13,6 @@
 
 <!-- @section -->
 
-# Overview
-
-Drupal 8 uses Symfony dependency injection containers to manage service instantiation and injection of those services into classes that need them. This decouples functionality and improves testability. For these two reasons alone it's important to learn what dependency injection means, why and how we use it.
-
-Now that you have created a service and used it, you may want to better understand dependency injection and service definitions.
-
-<!-- @section -->
-
 ## Service Definitions
 
 [Services](http://symfony.com/doc/current/glossary.html#term-service) are defined in Symfony documentation, in the [Service Container](http://symfony.com/doc/current/book/service_container.html) section:
