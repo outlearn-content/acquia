@@ -21,7 +21,7 @@ A contributed module was necessary to further extend the entity API of Drupal 7 
 
 Prior to Drupal 7, only nodes were fieldable; however, with modeling core parts of the Drupal framework as entities you were then able to add fields to comments, terms, and users.
 
-Now, with the advent of Drupal 8, Drupal has the ability to generate entities and fields through the Configuration Management Initiative (which was covered in [Lesson 5.3](https://docs.acquia.com/articles/drupal-8-configuration-forms-and-cmi)).
+Now, with the advent of Drupal 8, Drupal has the ability to generate entities and fields through the Configuration Management Initiative (which was covered in [Lesson 3.1 - Configuration forms and management](https://www.outlearn.com/learn/pronovix/building-modules-drupal8-part1/11)).
 
 <!-- @section -->
 
