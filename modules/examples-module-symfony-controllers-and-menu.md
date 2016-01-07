@@ -11,24 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-_Why is Drupal 8 module development so different?_
-
-Drupal 8 implements changes that are necessary to modernize itself so that it may more effectively leverage common standards and remain competitive with other modern frameworks.
-
-<!-- @section -->
-
-## In this lesson...
-
-*   Learn about the [Examples contributed project](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#examples), the [Symfony PHP framework](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#symfony), [Controllers](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#what-controllers), and [Routers](https://docs.acquia.com/articles/examples-module-symfony-controllers-and-menu#routers).
-*   Build the module `examples/page_example`.
-*   Explore how to build the `*.info.yml` file for the `page_example` module, and the `*.routing.yml`, the `Controller.php`, and `*.links.menu.yml` files.
-
-<!-- @section -->
-
 ## Drupal 8 and the Examples module
 
 To explore Drupal 8, we use the [Examples](https://www.drupal.org/project/examples) project, both for sample code snippets in this class and to prepare you for future exploration of the various module development capabilities in Drupal. Be sure to follow the setup instructions for this lesson and clone the Git repo for the Drupal 8 version of the module to a location that isn't in the Drupal path — this avoids any chance of the code conflicting with the lab work that you'll be engaging in. Work and examples in this class primarily draw upon the Examples project's module `page_example`.
