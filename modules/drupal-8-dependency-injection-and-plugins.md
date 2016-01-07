@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Plugins
 
 Plugins are the most complex component to add dependency injection to. Many plugins don't require dependency injection, making it sometimes challenging to find examples to copy. Most plugins extend other classes and may use interfaces. Blocks, for example, extend `BlockBase` which implements `BlockPluginInterface`.
