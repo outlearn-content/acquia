@@ -45,7 +45,7 @@
         {"module" : "drupal-8-loading-entities"},
         {"module" : "drupal-8-load-and-query-entities-lab"},
         {"module" : "drupal-8-loading-and-editing-fields"},
-        {"module" : "drupal-8-loading-fields-examples"}
+        {"module" : "drupal-8-loading-fields-examples"},
         {"page" : "./pages/closing-entities-fields.md"}
       ]
     },
@@ -76,7 +76,7 @@
         {"module" : "drupal-8-dependency-injection-and-services"},
         {"module" : "drupal-8-dependency-injection-and-controllers"},
         {"module" : "drupal-8-dependency-injection-and-plugins"},
-        {"module" : "drupal-8-phpstorm-strategies"}
+        {"module" : "drupal-8-phpstorm-strategies"},
         {"page" : "./pages/closing-mastering.md"}
       ]
     }
