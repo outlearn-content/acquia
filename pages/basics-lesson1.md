@@ -1,4 +1,4 @@
-# What you'll learn in Lesson 1
+# Initial Pieces Necessary to Build a Module
 
 _Why is Drupal 8 module development so different?_
 
