@@ -11,12 +11,6 @@
 }
 -->
 
-<!--@section-->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and summary
 
 In this lesson we’ve begun to explore configurations and the configuration form which can be used to store values in the system. You are encouraged to further explore the `ConfigFormBase` and what options are available for extending it. Additionally, you should try different combinations for importing/exporting configuration between sites using the user interface.
