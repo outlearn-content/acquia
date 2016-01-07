@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and Summary
 
 In this lesson we’ve continued to explore Drupal 8 module development with two new topics: blocks and forms. You know how to create a new block type so that new blocks may be generated via the UI. You've learned how to create a simple implementation of the FormBase class to print out to the screen the value submitted by the user. The concept of inheritance in Drupal has been covered:
