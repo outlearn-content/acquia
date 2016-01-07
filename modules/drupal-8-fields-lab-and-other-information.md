@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## New field types
 
 Drupal 8 ships with several new modules to extend the default Fields API possibilities.
