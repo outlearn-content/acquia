@@ -24,6 +24,7 @@
         {"module" : "drupal-8-configuration-forms-and-cm"},
         {"module" : "drupal-8-configuration-and-config-object"},
         {"module" : "drupal-8-configuration-lab-and-other-information"}
+        {"page" : "./pages/closing-basics.md"},
       ]
     },
     {
