@@ -1,4 +1,4 @@
-# Querying Entities in Drupal 8
+# Lesson 6: Querying Entities in Drupal 8
 
 ## In this lesson...
 
