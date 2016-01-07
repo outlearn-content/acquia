@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Conclusion and summary
 
 The power of the service container allows for writing decoupled functionality in code and passing it where it’s needed. You can also declare dependencies when you register services. This means that when Drupal instantiates a service object, it will do so for all its dependencies as well, and pass them to its constructor. You can read more about how to do that in the [documentation for Services and dependency injection](https://www.drupal.org/node/2133171) in Drupal 8.
