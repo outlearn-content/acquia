@@ -10,11 +10,10 @@ For this lesson we will be using the **block_example** module from the [Examples
 
 ## In this lesson...
 
-*   [Assemble the module - examples/block_example](https://docs.acquia.com/articles/drupal-8-blocks-configuration-and-forms#create).
-*   [Learn about the introduction of annotations in Drupal 8](https://docs.acquia.com/articles/drupal-8-blocks-configuration-and-forms#classes).
+*   Assemble the module - examples/block_example 
+*   Learn about the introduction of annotations in Drupal 8 
 *   Explore how to add blocks using the Drupal GUI.
-*   [Learn about the Form API (or FormsAPI)](https://docs.acquia.com/articles/creating-forms-drupal-8).
+*   Learn about the Form API (or FormsAPI)
 *   Explore how to build using the FormsAPI.
 *   Explore how to build a block and a page with a form.
 
-We will use the code organization from the [first page](https://docs.acquia.com/articles/building-drupal-8-modules#code) of this chapter.
