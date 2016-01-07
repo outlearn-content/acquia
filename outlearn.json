@@ -73,6 +73,7 @@
         {"module" : "drupal-8-advanced-render-array-patterns"},
         {"module" : "drupal-8-patterns-overview"},
         {"module" : "drupal-8-theme-lab"},
+        {"page" : "./pages/mastering-lesson10.md"},
         {"module" : "drupal-8-unit-and-functional-testing"},
         {"module" : "drupal-8-unit-testing"},
         {"module" : "drupal-8-functional-tests"},
