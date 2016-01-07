@@ -1,4 +1,4 @@
-# Fields in Drupal 7 vs Drupal 8 
+# Lesson 7: Fields in Drupal 7 vs Drupal 8 
 
 In Drupal 7, fields were often stored as complex arrays that could take on a number of patterns. In Drupal 8, fields all use the same pattern. They are all objects in the class [`FieldItemList`](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21FieldItemList.php/class/FieldItemList/8). This is the case if they are single value, multi-value, multilingual, built-in fields, or attached fields. In some ways, this makes developing for Drupal 8 easier, but also means that some things that were simple in Drupal 7 are more complex.
 
