@@ -11,12 +11,6 @@
 }
 -->
 
-<!-- @section -->
-
-# Overview
-
-<!-- @section -->
-
 ## Creating a Controller
 
 We have already created controllers. We will start with a controller that doesn't use the service and then add the service. It will return a render array when the `simple_example()` function is called. It's usually a good idea to extend base classes. In this case, we extend our controller with the `ControllerBase` class. As we will soon see, this gives us access to the services.
